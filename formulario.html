@@ -4,9 +4,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="css/principal.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body>
 
+  <div class="container">
+    <!--Header (igual casi al del ejercicio, mirar css para colores y mirar en bootstrap si se quiere cambiar la letra (fw-bold))-->
+    <header class="container-fluid my-4 row align-items-center justify-content-evenly">
+      <a href="index.html" id="logo" class="col-sm-auto">
+        <img src="img/logoClaro.jpeg" alt="logo" class="img-fluid">
+      </a>
+      <div class="col-sm-auto">
+        <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
+      </div>
+    </header>
+
+    <!--Navbar (también como en el ejercicio de clase)-->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid ms-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="salud.html">Beneficios</a></li>
+                <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
+              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+                <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
+                <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" data-bs-theme="dark">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="salud.html">Clubs y asociaciones</a></li>
+                <li><a class="dropdown-item" href="recursos.html">Recursos y enlaces útiles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Contenedor principal-->
+    <div class="container-fluid row">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <!-- Pie de página -->
+    <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
+      <div class="container">
+        <p class="text-white m-0">Javier Melendo Gabriela Barton | DIW | Sitio Bootstrap</p>
+      </div>
+      <a class="btn btn-primary" href="nosotros.html" role="button">Sobre nosotros</a>
+    </div>
+  </div>
 </body>
 </html>
