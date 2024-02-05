@@ -1,17 +1,7 @@
-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-#logo{
-  float: left;
-}
-
-#logo img{
-  width: 75px;
-  height: 75px;
+#logo {
+  width: 100px;
+  height: auto;
 }
 
 .titulo {
