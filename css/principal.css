@@ -16,3 +16,8 @@
 nav {
   background-color: #34f9fc;
 }
+
+.carousel-image {
+  height: 300px;
+  object-fit: cover;
+}
