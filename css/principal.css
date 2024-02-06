@@ -1,3 +1,18 @@
+.todoCSS{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: sans-serif;
+}
+
+
+
+.footerCSS{
+  background-color: #212529;
+  color: white;
+}
+
 #logo {
   width: 300px;
 }
@@ -19,3 +34,4 @@ nav {
   height: 300px;
   object-fit: cover;
 }
+
