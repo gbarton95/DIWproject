@@ -31,7 +31,7 @@
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
-              <ul class="dropdown-menu" data-bs-theme="dark">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="contenido/salud.html">Beneficios</a></li>
                 <li><a class="dropdown-item" href="contenido/consejos.html">Consejos</a></li>
               </ul>
@@ -110,7 +110,43 @@
       <div class="container">
         <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
       </div>
-      <a class="btn btn-primary" href="contenido/nosotros.html" role="button">Sobre nosotros</a>
+      <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sobre Nosotros</button>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Creadores de esta página</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/monigote.png" class="card-img-top img-fluid" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Gabriela Barton</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card" style="width: 18rem;">
+                      <img src="img/monigote.png" class="card-img-top img-fluid" alt="...">
+                      <div class="card-body">
+                        <p class="card-text">Javier Melendo</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
