@@ -4,18 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulario</title>
-  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="../css/principal.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
-
-  <div class="container">
-    <!--Header (igual casi al del ejercicio, mirar css para colores y mirar en bootstrap si se quiere cambiar la letra (fw-bold))-->
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
+    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
     <header class="container-fluid my-4 row align-items-center justify-content-evenly">
       <a href="../index.html" id="logo" class="col-sm-auto">
-        <img src="../img/logoenlaces.jpeg" alt="logo" class="img-fluid">
+        <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
       </a>
       <div class="col-sm-auto">
         <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
@@ -44,10 +43,10 @@
                 <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown" data-bs-theme="dark">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="salud.html">Clubs y asociaciones</a></li>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="comunidad.html">Clubs y asociaciones</a></li>
                 <li><a class="dropdown-item" href="recursos.html">Recursos y enlaces útiles</a></li>
               </ul>
             </li>
@@ -55,33 +54,36 @@
         </div>
       </div>
     </nav>
-
-    <!--Contenedor principal-->
+    <!-- Contenedor principal -->
     <div class="container-fluid row">
-      <form>
+      <!-- Formulario -->
+      <form id="miFormulario">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label"></label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="nombre" class="form-label"><b>Nombre</b></label>
+          <input type="text" class="form-control" id="nombre" aria-describedby="nombre" required>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="email" class="form-label"><b>Correo Electrónico</b></label>
+          <input type="email" class="form-control" id="email" aria-describedby="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="duda" class="form-label"><b>Duda</b></label>
+          <input type="text" class="form-control" id="duda" required>
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <input type="checkbox" class="form-check-input" id="check" required>
+          <label class="form-check-label" for="check"><b>¿Nos dejas que te mandemos correos para poder responderte?</b></label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" value="Enviar">
+
       </form>
     </div>
-
+    <br>
     <!-- Pie de página -->
     <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
       <div class="container">
-        <p class="text-white m-0">Javier Melendo Gabriela Barton | DIW | Sitio Bootstrap</p>
+        <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
       </div>
-      <a class="btn btn-primary" href="nosotros.html" role="button">Sobre nosotros</a>
     </div>
   </div>
 </body>

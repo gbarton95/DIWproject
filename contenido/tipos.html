@@ -4,8 +4,108 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tipos de deporte</title>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../css/principal.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-<body>
 
+<body>
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
+    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
+    <header class="container-fluid my-4 row align-items-center justify-content-evenly">
+      <a href="../index.html" id="logo" class="col-sm-auto">
+        <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
+      </a>
+      <div class="col-sm-auto">
+        <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
+      </div>
+    </header>
+
+    <!--Navbar (también como en el ejercicio de clase)-->
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid ms-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="salud.html">Beneficios</a></li>
+                <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
+              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+                <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
+                <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="comunidad.html">Clubs y asociaciones</a></li>
+                <li><a class="dropdown-item" href="recursos.html">Recursos y enlaces útiles</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Contenedor principal -->
+    <div class="container-fluid row">
+      <h1>Tipos de deportes</h1>
+      <p>Los tipos de deportes existentes son muy diversos. Si se indaga sobre actividades deportivas que pueden ponerse en práctica, no alcanzaría un solo post para mencionar todas las posibilidades; incluso muchas de éstas son desconocidas para la gente. Para distinguir los tipos de deportes, comunes y no comunes, basta con centrarse en una serie de categorías que engloban todas las prácticas deportivas del mundo.
+        Los grupos donde entraría a formar parte cualquier tipo de deporte, por categorías deportivas, son los siguientes: deportes de equipo, deportes de pelota, deportes acuáticos, deportes de montaña, deportes de aventura, deportes de fuerza, deportes extremos, deportes de tiro y deportes de motor.</p>
+      <p>Cabe destacar que, durante los últimos años, actividades electrónicas como los videojuegos de estrategia, videojuegos de disparos y videojuegos multijugadores, se están empezando a considerar deportes. Otro tipo de deportes populares, más peculiares respecto a los habituales, son el ajedrez y la pesca.
+        En este post se citan los deportes más conocidos, que engloban cada una de estas categorías, así como el significado de estos grupos deportivos.</p>
+      <p>Algunos ejemplos de tipos de deportes son:</p>
+      <div class="d-none d-md-table"><!--en movil no se ve-->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Tipo</th>
+              <th scope="col">Especialidad</th>
+              <th scope="col">Ejemplos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>De equipo</td>
+              <td>Actividades donde se compite en conjunto con otras personas.</td>
+              <td>Fútbol, baloncesto o voleibol.</td>
+            </tr>
+            <tr>
+              <td>Acuáticos</td>
+              <td>Estos se realizan en el agua, ya sea en piscinas o en mar abierto.</td>
+              <td>Natación, waterpolo, piragüismo o surf.</td>
+            </tr>
+            <tr>
+              <td>De raqueta</td>
+              <td>En todos ellos se utiliza una raqueta para golpear un objeto.</td>
+              <td>Tenis, badminton, padel o squash.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Si quieres conocer más algunos de los deportes más jugados, te dejo estos links informativos: </p>
+      <div class="list-group col-4">
+        <a href="https://www.significados.com/futbol/" class="list-group-item list-group-item-action">Fútbol</a>
+        <a href="https://www.significados.com/basquetbol/" class="list-group-item list-group-item-action">Baloncesto</a>
+        <a href="https://www.significados.com/tenis/" class="list-group-item list-group-item-action">Tenis</a>
+        <a href="https://concepto.de/natacion/" class="list-group-item list-group-item-action">Natación</a>
+      </div>
+    </div>
+    <br>
+
+    <!-- Pie de página -->
+    <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
+      <div class="container">
+        <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
