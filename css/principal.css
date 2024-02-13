@@ -170,3 +170,27 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 }
+
+.checkbox-image {
+  display: inline-block;
+  position: relative;
+}
+
+.checkbox-image input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-image img {
+  width: 50px; /* Ancho de la imagen */
+  height: 30px; /* Alto de la imagen */
+}
+
+#ingles {
+  display:none
+}
+#ingles:checked~.texto1{
+  visibility: hidden;
+      font-size: 0px;
+}
