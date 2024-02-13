@@ -6,6 +6,7 @@
   <title>Salud y deporte</title>
   <link rel="stylesheet" href="../css/principal.css">
 </head>
+
 <body>
   <div class="todoCSS"> <!--Contenedor genérico de la página-->
     <header class="cabeceraCSS">
@@ -40,27 +41,64 @@
 
     <!--Contenedor principal-->
     <div class="contenido">
-      <div class=""> <!--Columna izquierda-->
-        <h1>¡Bienvenidos a Deporte en Zaragoza!</h1>
-        <p>Nos enorgullece ser tu compañero en el emocionante viaje hacia un estilo de vida activo y saludable. Somos más que una página de deportes; somos tu fuente confiable de información, motivación y recursos para alcanzar tus metas de bienestar.<br><br>
+      <div class="columna izquierda"> <!--Columna izquierda-->
+        <h2>¡Actívate y Vive! Descubre los Innumerables Beneficios del Deporte</h2>
+        <p>El deporte no es solo una actividad física; es una fuente inagotable de beneficios que abarcan todas las edades y etapas de la vida. En esta sección, exploraremos los múltiples aspectos positivos que el deporte aporta a los jóvenes, adultos y niños, así como sus impactos en la salud física y mental.</p>
+        <div class="colapsables-falsos"><!--Colapsables con CSS-->
+          <label for="cbninos" class="boton-colapsar">Niños</label>
+          <input type="checkbox" id="cbninos" class="fakecheckbox">
+          <div class="txtcolapsable">
+            <h3>Deporte para Niños: Aprendizaje y Diversión</h3>
+            <p>Los niños que participan en actividades deportivas experimentan beneficios tanto físicos como mentales. El deporte fomenta el desarrollo motor, mejora la coordinación y promueve hábitos saludables desde una edad temprana. Además, la competencia amistosa y la diversión asociada con el deporte contribuyen al desarrollo social y emocional de los más pequeños.</p>
+          </div>
 
-          En nuestro espacio dedicado al deporte, encontrarás artículos inspiradores, consejos de expertos y los beneficios del mundo del fitness. Desde rutinas de entrenamiento efectivas hasta reseñas de equipos y eventos deportivos, estamos aquí para mantenerte informado y motivado.<br><br>
+          <label for="cbjovenes" class="boton-colapsar">Jóvenes</label>
+          <input type="checkbox" id="cbjovenes" class="fakecheckbox">
+          <div class="txtcolapsable">
+            <h3>Deporte para Jóvenes: Desarrollo Integral</h3>
+            <p>Para los jóvenes, la práctica deportiva va más allá de la simple actividad física. Además de fortalecer los músculos y mejorar la salud cardiovascular, el deporte fomenta el desarrollo de habilidades sociales, trabajo en equipo y liderazgo. La participación en deportes durante la adolescencia no solo promueve un estilo de vida activo, sino que también contribuye a la formación de individuos seguros y resilientes.</p>
+          </div>
 
-          La salud es un aspecto fundamental de nuestro enfoque. Exploramos temas relacionados con la nutrición, la salud mental y el bienestar general. Creemos en el equilibrio y en la importancia de cuidar tanto de tu cuerpo como de tu mente.<br><br>
+          <label for="cbadultos" class="boton-colapsar">Adultos</label>
+          <input type="checkbox" id="cbadultos" class="fakecheckbox">
+          <div class="txtcolapsable">
+            <h3>Deporte para Adultos: Bienestar a lo Largo de la Vida</h3>
+            <p>En la vida adulta, el deporte se convierte en un aliado esencial para mantener la salud y prevenir enfermedades crónicas. La actividad física regular mejora la salud cardiovascular, fortalece los huesos, controla el peso y reduce el riesgo de enfermedades como la diabetes. Además, participar en deportes brinda una válvula de escape del estrés diario, promoviendo un equilibrio mental y emocional.</p>
+          </div>
+        </div>
+        <h2>Beneficios sobre tu cuerpo</h2>
+        <p>En el siguiente mapa puedes ver algunas de las ventajas de hacer ejercicio leve y moderado de forma habitual. Te lo agradecerán tus sistemas cardiovascular, respiratorio, músculo-esquelético y nervioso. También mejorará tu metabolismo y tus ritmos circadianos (si te cuesta dormirte... ¡prueba a hacer algo de deporte!).</p>
 
-          ¡Vamos juntos hacia un mejor tú!</p>
-      </div>
-      <div class=""> <!--Columna derecha-->
-
-
-      </div>
     </div>
+    <div class="columna derecha"> <!--Columna derecha-->
+      <img src="../img/cuerpo-humano.png" alt="El cuerpo humano" usemap="#mapahumano">
+      <map name="mapahumano">
 
-    <!-- Pie de página -->
-    <div class="footerCSS">
-      <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
-      <a class="btn btn-primary" href="contenido/nosotros.html" role="button">Sobre nosotros</a>
+        <area alt="cabeza" class="cabeza" coords="107,98,102,77,95,65,98,63,101,43,107,37,117,33,128,37,135,43,136,51,138,58,138,63,140,62,136,74,131,87,129,98,107,98,107,98" shape="poly">
+        <label for="cabeza">Migrañas</label>
+
+
+        <area class="pulmones" alt="pulmones" coords="102,122,84,151,91,176,99,210,102,226,113,173,113,147,113,125,125,126,108,122,127,122,128,168,149,168,141,202,133,228,113,146,124,122,114,148,111,122" shape="poly">
+        <label for="pulmones">pulmones</label>
+
+        <area alt="circulación" class="circulación" coords="" shape="poly">
+        <label for="circulación">circulación</label>
+
+        <area alt="piernas" class="piernas" coords="" shape="poly">
+        <label for="piernas">piernas</label>
+
+        <area alt="hombros" class="hombros" coords="104,98,67,118,60,134,59,152,76,141,91,133,101,121,103,107,109,100,122,100,131,98,139,102,154,108,165,115,171,122,175,134,176,150,163,150,150,134,135,116,130,100" shape="poly">
+        <label for="hombros">hombros</label>
+      </map>
+
     </div>
+  </div>
+
+  <!-- Pie de página -->
+  <div class="footerCSS">
+    <p>Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
+    <a class="boton-primario" href="contenido/nosotros.html" role="button">Sobre nosotros</a>
+  </div>
   </div>
 </body>
 </html>
