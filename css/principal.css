@@ -261,7 +261,12 @@ a.boton-primario:hover {
 #ingles {
   display:none
 }
+.texto2{
+  display: none;
+}
 #ingles:checked~.texto1{
-  visibility: hidden;
-      font-size: 0px;
+ display: none;
+}
+#ingles:checked~.texto2{
+  display: block;
 }
