@@ -18,24 +18,25 @@
 
     <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navegadorCSS">
-      <ul>
-        <li class="prim"><a href="#">Recetas</a>
+      <ul id="menuNav">
+        <li class="prim"><a href="#">Lo básico <span class="arrowDown">&#129171;</span></a>
           <ul>
-            <li><a href="#tiramisu">Tiramisú</a></li>
-            <li><a href="#tartachoco">Tarta de chocolate</a></li>
-            <li><a href="#tartamanza">Tarta de manzana</a></li>
-            <li><a href="#cremacat">Crema Catalana</a></li>
-            <li><a href="#arrozleche">Arroz con leche</a></li>
-            <li><a href="#dulceleche">Dulce de leche</a></li>
+            <li><a href="#">Beneficios y salud</a></li>
+            <li><a href="#">Consejos</a></li>
           </ul>
         </li>
-        <!-- El menú funciona con más items
-        <li class="prim"><a href="#">Prueba</a>
-          <ul><li><a href="#">Subprueba</a></li></ul>
+        <li class="prim"><a href="#">Deportes<span class="arrowDown">&#129171;</span></a>
+          <ul>
+            <li><a href="#">Tipos</a></li>
+            <li><a href="#">En Zaragoza</a></li>
+          </ul>
         </li>
-        <li class="prim"><a href="#">Prueba</a>
-          <ul><li><a href="#">Subprueba</a></li></ul>
-        </li>     -->
+        <li class="prim"><a href="#">Comunidad<span class="arrowDown">&#129171;</span></a>
+          <ul>
+            <li><a href="#">Clubs y asociaciones</a></li>
+            <li><a href="#">Recursos y enlaces útiles</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
@@ -75,21 +76,27 @@
       <map name="mapahumano">
 
         <area alt="cabeza" class="cabeza" coords="107,98,102,77,95,65,98,63,101,43,107,37,117,33,128,37,135,43,136,51,138,58,138,63,140,62,136,74,131,87,129,98,107,98,107,98" shape="poly">
-        <label for="cabeza">Migrañas</label>
+        <label for="cabeza">Salud mental</label>
 
+        <area class="pulmones" alt="pulmones" coords="106,123,86,134,86,157,91,185,97,206,105,217,119,202,119,166,128,216,143,200,139,178,115,151,119,137,148,125,130,121" shape="poly">
+        <label for="pulmones">Respira mejor</label>
 
-        <area class="pulmones" alt="pulmones" coords="102,122,84,151,91,176,99,210,102,226,113,173,113,147,113,125,125,126,108,122,127,122,128,168,149,168,141,202,133,228,113,146,124,122,114,148,111,122" shape="poly">
-        <label for="pulmones">pulmones</label>
+        <area alt="circulacion" class="circulacion" coords="145,133,127,136,118,149,129,161,138,171,147,155,152,143" shape="poly">
+        <label for="circulacion">Corazón sano</label>
 
-        <area alt="circulación" class="circulación" coords="" shape="poly">
-        <label for="circulación">circulación</label>
-
-        <area alt="piernas" class="piernas" coords="" shape="poly">
-        <label for="piernas">piernas</label>
+        <area alt="extremidades" class="extremidades" coords="57,187,55,200,51,216,51,232,49,253,47,261,39,264,32,277,41,273,39,293,43,296,43,300,50,293,57,290,59,268,61,256,72,230,76,212,77,198,86,190,83,207,81,222,78,238,75,263,75,291,78,309,81,326,85,348,83,375,81,390,86,412,88,431,91,450,91,460,82,473,82,478,85,483,93,483,95,487,105,475,108,462,107,447,107,432,107,411,109,380,111,358,111,326,114,296,77,298,122,295,123,334,125,348,126,367,125,396,127,422,129,439,129,454,129,471,135,480,139,486,148,484,157,476,145,460,145,439,150,409,153,381,149,349,153,326,161,296,161,296,161,264,155,222,150,194,161,194,161,216,165,230,175,258,178,284,184,293,193,300,195,293,194,274,201,278,195,261,185,250,184,228,179,200,177,190,151,191,161,297,77,298,75,262,86,194" shape="poly">
+        <label for="extremidades">Más fuerza</label>
 
         <area alt="hombros" class="hombros" coords="104,98,67,118,60,134,59,152,76,141,91,133,101,121,103,107,109,100,122,100,131,98,139,102,154,108,165,115,171,122,175,134,176,150,163,150,150,134,135,116,130,100" shape="poly">
-        <label for="hombros">hombros</label>
+        <label for="hombros">Salud postural</label>
       </map>
+      <div id="contenedorInfoMapa">
+        <p class="cabeza">El ejercicio regular mejora el flujo sanguíneo hacia el cerebro, estimulando la función cognitiva y reduciendo el riesgo de enfermedades neurodegenerativas.</p>
+        <p class="pulmones">La práctica regular de ejercicio aumenta la capacidad pulmonar, favorece una mejor oxigenación del cuerpo y ayuda a mantener la salud respiratoria, reduciendo el riesgo de enfermedades pulmonares.</p>
+        <p class="circulacion">El ejercicio cardiovascular fortalece el músculo cardíaco, reduce la presión arterial y mejora el flujo sanguíneo, disminuyendo el riesgo de enfermedades cardíacas.</p>
+        <p class="extremidades">La actividad física tonifica los músculos, mejora la flexibilidad y promueve la salud articular, contribuyendo a la funcionalidad y resistencia de las extremidades.</p>
+        <p class="hombros">El ejercicio fortalece los músculos de la espalda, mejora la postura y reduce la probabilidad de dolores lumbares, favoreciendo la salud y el bienestar de la columna vertebral.</p>
+      </div>
 
     </div>
   </div>
@@ -97,7 +104,7 @@
   <!-- Pie de página -->
   <div class="footerCSS">
     <p>Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
-    <a class="boton-primario" href="contenido/nosotros.html" role="button">Sobre nosotros</a>
+    <a class="boton-us" href="contenido/nosotros.html" role="button">Sobre nosotros</a>
   </div>
   </div>
 </body>
