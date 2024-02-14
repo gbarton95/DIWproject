@@ -70,10 +70,20 @@
           <label for="duda" class="form-label"><b>Duda</b></label>
           <input type="text" class="form-control" id="duda" required>
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="check" required>
-          <label class="form-check-label" for="check"><b>¿Nos dejas que te mandemos correos para poder responderte?</b></label>
-        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+            <label class="form-check-label" for="firstCheckbox">¿Nos dejas mandarte un correo para poder responderte?</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+            <label class="form-check-label" for="secondCheckbox">¿Quieres recibir información en tu correo acerca del deporte en Zaragoza?</label>
+          </li>
+          <li class="list-group-item">
+            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox" required>
+            <label class="form-check-label" for="thirdCheckbox">He leído y acepto la política de privacidad <b style="color: red;">*</b></label>
+          </li>
+        </ul>
         <input type="submit" value="Enviar">
 
       </form>
