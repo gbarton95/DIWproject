@@ -25,50 +25,43 @@ body, html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 10vh;
-  border: 1px solid blue;
-
+  height: 140px;
 }
 
 .cabeceraCSS > *{
   display: flex;
   justify-content: center;
   width: fit-content;
-  border: 1px solid red;
   font-weight: bold;
+  font-size: 2em;
+}
+
+.cabeceraCSS h1 {
+  margin-right: 50px;
 }
 
 .cabeceraCSS img{
-  border: 1px solid red;
-  height: 50px;
+  height: 90px;
 }
 
 
 
 /****************************************************************************************/
 
-/*Es sticky con el límite en el top*/
-nav {
+.navegadorCSS {
+  background-color: #34f9fc;
   display: flex;
   top: 0;
-  height: 50px;
-  margin: 0;
+  height: 55px;
+  margin: 0px 3px 0px 3px;
   padding: 0;
-
 }
 
-/*Decido identificar la lista desordenada de items primarios (o prim) como #menu,
-pero realmente ocupa a niveles efectivos el mismo espacio que el div nav*/
-nav #menu {
+.navegadorCSS #menuNav {
   display: flex;
-  width: 100%;
-  height: 100%;
-  background: black;
-  font: 16px Verdana;
-
+  margin-left: 50px;
 }
 
-/*Quito el estilo de la lista desordenada, así como márgenes*/
 ul {
   list-style: none;
   margin: 0;
@@ -76,43 +69,52 @@ ul {
 }
 
 /*Añado estilo básico a los hijos más anidados*/
-nav #menu li a {
+.prim li a {
   display: block;
-  background-color: #f1f1f0;
-  color: black;
+  background-color: #212529;
+  color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 18px;
+  padding: 8px 15px;
 }
 
-nav #menu li a:hover {
-  background-color: #dddddd;
+.prim > ul li:first-child a {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-nav li ul {
+.prim > ul li:last-child a {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.navegadorCSS #menuNav li a:hover {
+  background-color: #2b3035;
+}
+
+.navegadorCSS li ul {
   display: none;
   position: absolute;
 }
 
 /*El estilo de los enlaces del menú con clase prim*/
-nav #menu li.prim>a {
+.navegadorCSS #menuNav li.prim > a {
   display: flex;
-  background-color: #3B8E44;
-  color: white;
+  background-color: #34f9fc;
+  color: #125758;
   text-decoration: none;
-  padding: 15px;
+  padding: 15px 0px 15px 10px;
+  margin-left: 5px;
 }
 
 /*Aparece la sublista cuando hago hover sobre el padre directo*/
-nav #menu li:hover>ul {
+.navegadorCSS #menuNav li:hover>ul {
   display: block;
 }
 
-/*Borde exterior naranja cuando se selecciona el artículo*/
-
-article:target {
-  outline: 3px solid white;
+span.arrowDown {
+  font-size: 24px;
+  height: 15px;
+  margin-top: 2px;
 }
 
 /****************************************************************************************/
@@ -120,13 +122,8 @@ article:target {
 .contenido {
   display: flex;
   height: 100%;
-  padding: 50px;
+  padding: 10px 50px;
 }
-
-.izquierda {
-  max-width: 60%;
-}
-
 
 /****************************************************************************************/
 
@@ -164,6 +161,11 @@ input[type="checkbox"]:checked + .txtcolapsable {
 
 /****************************************************************************************/
 
+#contenedorInfoMapa p {
+  display: none;
+}
+
+/****************************************************************************************/
 .footerCSS{
   display: flex;
   align-items: center;
@@ -191,7 +193,7 @@ input[type="checkbox"]:checked + .txtcolapsable {
     -moz-text-fill-color: transparent;
 }
 
-nav {
+.navbar {
   background-color: #34f9fc;
 }
 
@@ -204,17 +206,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
-a.boton-primario {
-  position: absolute;
-  right: 25px;
+a.boton-us {
   text-decoration: none;
   color: white;
   background-color: #0d6efd;
   padding: 8px 18px 8px 18px;
   border-radius: 6px;
+  margin-left: auto;
+  margin-right: 15px;
 }
 
-a.boton-primario:hover {
+a.boton-us:hover {
   background-color: #0b5ed7;
 }
 
@@ -222,7 +224,9 @@ a.boton-primario:hover {
 
 @media only screen and (max-width: 550px) {
 
-
+  .contenido {
+    flex-direction: column;
+  }
 
 }
 
@@ -237,7 +241,14 @@ a.boton-primario:hover {
   .todoCSS {
     width: 85vw;
     margin: auto;
+  }
 
+  .izquierda {
+    max-width: 60%;
+  }
+
+  .derecha {
+    margin: auto;
   }
 
 }
