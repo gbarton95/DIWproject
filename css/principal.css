@@ -1,34 +1,38 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
 }
 
-.todoCSS{
+.todoCSS {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   font-family:
-  /* 1 MacOS*/ -apple-system, BlinkMacSystemFont,
-  /* 2 Android, Chrome, Ubuntu...*/ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-  /* 3 Otros */ "Helvetica Neue", sans-serif;
+    /* 1 MacOS*/
+    -apple-system, BlinkMacSystemFont,
+    /* 2 Android, Chrome, Ubuntu...*/
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    /* 3 Otros */
+    "Helvetica Neue", sans-serif;
   line-height: 1.5;
-  color: rgba(33,37,41,255);
+  color: rgba(33, 37, 41, 255);
   padding-left: 10px;
   padding-right: 10px;
 }
 
 /****************************************************************************************/
 
-.cabeceraCSS{
+.cabeceraCSS {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 140px;
 }
 
-.cabeceraCSS > *{
+.cabeceraCSS>* {
   display: flex;
   justify-content: center;
   width: fit-content;
@@ -40,7 +44,7 @@ body, html {
   margin-right: 50px;
 }
 
-.cabeceraCSS img{
+.cabeceraCSS img {
   height: 90px;
 }
 
@@ -77,12 +81,12 @@ ul {
   padding: 8px 15px;
 }
 
-.prim > ul li:first-child a {
+.prim>ul li:first-child a {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
 
-.prim > ul li:last-child a {
+.prim>ul li:last-child a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -97,7 +101,7 @@ ul {
 }
 
 /*El estilo de los enlaces del menú con clase prim*/
-.navegadorCSS #menuNav li.prim > a {
+.navegadorCSS #menuNav li.prim>a {
   display: flex;
   background-color: #34f9fc;
   color: #125758;
@@ -146,7 +150,7 @@ span.arrowDown {
   background-color: #c4feff;
 }
 
-input[type="checkbox"]:checked + .txtcolapsable {
+input[type="checkbox"]:checked+.txtcolapsable {
   display: block;
 }
 
@@ -166,7 +170,7 @@ input[type="checkbox"]:checked + .txtcolapsable {
 }
 
 /****************************************************************************************/
-.footerCSS{
+.footerCSS {
   display: flex;
   align-items: center;
   background-color: #212529;
@@ -185,12 +189,12 @@ input[type="checkbox"]:checked + .txtcolapsable {
 }
 
 .titulo {
-    background-image: linear-gradient(#34f9fc, #3146fa);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  background-image: linear-gradient(#34f9fc, #3146fa);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .navbar {
@@ -202,7 +206,12 @@ input[type="checkbox"]:checked + .txtcolapsable {
   object-fit: cover;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 
@@ -230,11 +239,7 @@ a.boton-us:hover {
 
 }
 
-@media only screen and (min-width: 551px) and (max-width: 1300px) {
-
-
-
-}
+@media only screen and (min-width: 551px) and (max-width: 1300px) {}
 
 @media only screen and (min-width: 1301px) {
 
@@ -251,4 +256,90 @@ a.boton-us:hover {
     margin: auto;
   }
 
+}
+
+.recorte {
+  width: 200px;
+  height: 208px;
+  background-image: url("../img/bici.png");
+  animation: imagen .6s steps(5, end) infinite;
+}
+
+@keyframes imagen {
+  from {
+    background-position: 1000px;
+  }
+
+  to {
+    background-position: 0px;
+  }
+}
+
+.fotorecorte {
+  position: relative;
+  display: inline-block;
+}
+
+.nota1 {
+  position: absolute;
+  top: 230px;
+  left: 40%;
+  width: 180px;
+  height: 20px;
+  transform: translate(-50%, 10px);
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nota1Texto{
+  position: absolute;
+  top: 300px;
+  left: 30%;
+  transform: translate(-50%, 10px);
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nota1:hover ~ .nota1Texto {
+  opacity: 1;
+}
+
+.nota2 {
+  position: absolute;
+  top: 220px;
+  left: 70%;
+  width: 180px;
+  height: 20px;
+  transform: translate(-50%, 10px);
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nota2Texto{
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nota2:hover ~ .nota2Texto {
+  opacity: 1;
 }
