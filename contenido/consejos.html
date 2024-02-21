@@ -10,112 +10,66 @@
 </head>
 
 <body>
-  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
-    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
-    <header class="container-fluid my-4 row align-items-center justify-content-evenly">
-      <a href="../index.html" id="logo" class="col-sm-auto">
-        <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
+  <div class="todoCSS"> <!--Contenedor genérico de la página-->
+    <header class="cabeceraCSS">
+      <a href="../index.html" id="logo">
+        <img src="../img/logoenlaces.png" alt="logo">
       </a>
-      <div class="col-sm-auto">
-        <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
-      </div>
+      <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
     </header>
 
     <!--Navbar (también como en el ejercicio de clase)-->
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid ms-5">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
-              <ul class="dropdown-menu" data-bs-theme="dark">
-                <li><a class="dropdown-item" href="salud.html">Beneficios</a></li>
-                <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
-              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
-                <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
-                <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
-              <ul class="dropdown-menu" data-bs-theme="dark">
-                <li><a class="dropdown-item" href="comunidad.html">Clubs y asociaciones</a></li>
-                <li><a class="dropdown-item" href="recursos.html">Recursos y enlaces útiles</a></li>
-              </ul>
-            </li>
+    <nav class="navegadorCSS">
+      <ul id="menuNav">
+        <li class="prim"><a href="#">Lo básico <span class="arrowDown">&#129171;</span></a>
+          <ul>
+            <li><a href="salud.html">Beneficios y salud</a></li>
+            <li><a href="consejos.html">Consejos</a></li>
           </ul>
-        </div>
-      </div>
+        </li>
+        <li class="prim"><a href="#">Deportes<span class="arrowDown">&#129171;</span></a>
+          <ul>
+            <li><a href="tipos.html">Tipos</a></li>
+            <li><a href="lugares.html">En Zaragoza</a></li>
+          </ul>
+        </li>
+        <li class="prim"><a href="#">Comunidad<span class="arrowDown">&#129171;</span></a>
+          <ul>
+            <li><a href="comunidad.html">Clubs y asociaciones</a></li>
+            <li><a href="recursos.html">Recursos y enlaces útiles</a></li>
+          </ul>
+        </li>
+      </ul>
     </nav>
-    <!-- Contenedor principal -->
-    <br>
-    <div class="container-fluid row">
-      <div class="breadcrumbContainer">
+
+    <!--Contenedor principal-->
+    <div class="contenido-vertical">
+
         <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Básico >> Consejos</p>
-      </div>
-      <h1>Consejos sobre el deporte</h1>
-      <p>Participar regularmente en actividades deportivas y físicas ofrece una serie de beneficios para tu salud y bienestar. Desde mejorar la salud cardiovascular y fortalecer los músculos hasta aumentar la energía y reducir el estrés, el ejercicio regular es una parte crucial de un estilo de vida saludable.</p>
-      <p>Si eres nuevo en el mundo del deporte y la actividad física, es importante comenzar de manera gradual y establecer metas alcanzables. Empieza con ejercicios simples y aumenta la intensidad y la duración a medida que te sientas más cómodo. No te olvides de escuchar a tu cuerpo y descansar cuando sea necesario.</p>
-      <p>Para evitar lesiones durante el ejercicio, asegúrate de calentar adecuadamente antes de comenzar y de enfriar después de terminar. Usa el equipo de protección adecuado y aprende la técnica adecuada para cada ejercicio. Escucha a tu cuerpo y no ignores el dolor; detén la actividad si sientes molestias.</p>
+      <div class="">
+        <h1>Consejos sobre el deporte</h1>
+        <p>Participar regularmente en actividades deportivas y físicas ofrece una serie de beneficios para tu salud y bienestar. Desde mejorar la salud cardiovascular y fortalecer los músculos hasta aumentar la energía y reducir el estrés, el ejercicio regular es una parte crucial de un estilo de vida saludable.</p>
+        <p>Si eres nuevo en el mundo del deporte y la actividad física, es importante comenzar de manera gradual y establecer metas alcanzables. Empieza con ejercicios simples y aumenta la intensidad y la duración a medida que te sientas más cómodo. No te olvides de escuchar a tu cuerpo y descansar cuando sea necesario.</p>
+        <p>Para evitar lesiones durante el ejercicio, asegúrate de calentar adecuadamente antes de comenzar y de enfriar después de terminar. Usa el equipo de protección adecuado y aprende la técnica adecuada para cada ejercicio. Escucha a tu cuerpo y no ignores el dolor; detén la actividad si sientes molestias.</p>
         <h4>Ejercicios de calentamiento</h4>
-      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio1.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio2.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio3.gif"  alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio4.gif" alt="">
-        </div>
       </div>
-      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio5.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio6.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio7.gif"  alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio8.gif" alt="">
-        </div>
-      </div>
-      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio9.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio10.gif" alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio11.gif"  alt="">
-        </div>
-        <div class="col-12">
-          <img class="img-fluid" src="../img/ejercicio12.gif" alt="">
-        </div>
+      <div id="mapaentrenamiento">
+        <div id="entrenamiento1"></div>
+        <div id="entrenamiento2"></div>
+        <div id="entrenamiento3"></div>
+        <div id="entrenamiento4"></div>
+        <div id="entrenamiento5"></div>
+        <div id="entrenamiento6"></div>
       </div>
     </div>
-    <br>
-
     <!-- Pie de página -->
     <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
       <div class="container">
-        <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
+        <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio CSS</p>
       </div>
     </div>
+
+
   </div>
 </body>
 </html>

@@ -132,6 +132,11 @@ span.arrowDown {
   padding: 10px 50px;
 }
 
+.contenido-vertical {
+  padding: 20px 50px;
+  margin: 10px;
+}
+
 /****************************************************************************************/
 
 .colapsables-falsos {
@@ -203,6 +208,21 @@ input[type="checkbox"]:checked+.txtcolapsable {
 }
 
 /****************************************************************************************/
+
+
+#mapaentrenamiento{
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-image: url(../img/spritesheet.png);
+}
+
+/****************************************************************************************/
+
+
 .footerCSS {
   display: flex;
   align-items: center;
@@ -299,7 +319,16 @@ a.boton-us:hover {
     margin: auto;
   }
 
+  .contenido-vertical {
+    width: 1000px;
+    margin: auto;
+  }
+
 }
+
+
+/****************************************************************************************/
+
 
 .fotorecorte {
   position: relative;
@@ -424,6 +453,9 @@ a.boton-us:hover {
 .noImportante:not(.importante) {
   color: black;
 }
+
+
+/****************************************************************************************/
 
 .breadcrumb{
   float: right;
