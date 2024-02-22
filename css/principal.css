@@ -208,16 +208,152 @@ input[type="checkbox"]:checked+.txtcolapsable {
 }
 
 /****************************************************************************************/
+#mapaentrenamiento {
+  border: 2px solid red;
+}
 
+#mapaentrenamiento div {
+  display: inline-block;
+  overflow-x: visible;
+}
 
-#mapaentrenamiento{
+/*Utilizamos la misma idea que la del mapa marino pero con varios contenedores para poder hacer todo más responsive*/
+
+/*Todos los contenedores principales comparten las mismas características: */
+#mapaentrenamientoA, #mapaentrenamientoB, #mapaentrenamientoC, #mapaentrenamientoD, #mapaentrenamientoE, #mapaentrenamientoF{
   position: relative;
-  width: 1000px;
-  height: 500px;
-  border: 1px solid black;
-  border-radius: 10px;
+  width: 400px;
+  height: 220px;
   margin: 10px auto;
-  background-image: url(../img/spritesheet.png);
+}
+
+#mapaentrenamientoA div, #mapaentrenamientoB div, #mapaentrenamientoC div, #mapaentrenamientoD div, #mapaentrenamientoE div, #mapaentrenamientoF div{
+  position: absolute;
+  width: 200px;
+  height: 220px;
+}
+
+/*Pero hay que especificar la imagen de cada uno: */
+#mapaentrenamientoA{
+  background-image: url(../img/entrenamientoA.png);
+}
+
+#mapaentrenamientoB{
+  background-image: url(../img/entrenamientoB.png);
+}
+
+#mapaentrenamientoC{
+  background-image: url(../img/entrenamientoC.png);
+}
+
+#mapaentrenamientoD{
+  background-image: url(../img/entrenamientoD.png);
+}
+
+#mapaentrenamientoE{
+  background-image: url(../img/entrenamientoE.png);
+}
+
+#mapaentrenamientoF{
+  background-image: url(../img/entrenamientoF.png);
+}
+
+/*Y ahora, especificar el hover de cada elemento individual*/
+
+#entrenamiento1 {
+  top: 0;
+}
+
+#entrenamiento1:hover {
+  background: url(../img/entrenamientoA.png) -10px 229px;
+}
+
+#entrenamiento2 {
+  left: 200px;
+}
+
+#entrenamiento2:hover {
+  background: url(../img/entrenamientoA.png) -210px 229px;
+}
+
+#entrenamiento3 {
+  left: 0;
+}
+
+#entrenamiento3:hover {
+  background: url(../img/entrenamientoB.png) -10px 220px;
+}
+
+#entrenamiento4 {
+  left: 200px;
+}
+
+#entrenamiento4:hover {
+  background: url(../img/entrenamientoB.png) -210px 220px;
+}
+
+#entrenamiento5 {
+  top: 0;
+}
+
+#entrenamiento5:hover {
+  background: url(../img/entrenamientoC.png) 0px 230px;
+}
+
+#entrenamiento6 {
+  left: 200px;
+}
+
+#entrenamiento6:hover {
+  background: url(../img/entrenamientoC.png) 200px 230px;
+}
+
+#entrenamiento7 {
+  left: 0;
+}
+
+#entrenamiento7:hover {
+  background: url(../img/entrenamientoD.png) -5px 229px;
+}
+
+#entrenamiento8 {
+  left: 200px;
+}
+
+#entrenamiento8:hover {
+  background: url(../img/entrenamientoD.png) -200px 237px;
+}
+
+#entrenamiento9 {
+  left: 0;
+}
+
+#entrenamiento9:hover {
+  background: url(../img/entrenamientoE.png) -5px 230px;
+}
+
+#entrenamiento10 {
+  left: 200px;
+}
+
+#entrenamiento10:hover {
+  background: url(../img/entrenamientoE.png) -210px 230px;
+}
+
+#entrenamiento11 {
+  left: 0px;
+}
+
+#entrenamiento11:hover {
+  background: url(../img/entrenamientoF.png) 0px 238px;
+}
+
+#entrenamiento12 {
+  left: 200px;
+}
+
+#entrenamiento12:hover {
+  background: url(../img/entrenamientoF.png) -200px 235px;
 }
 
 /****************************************************************************************/
@@ -299,13 +435,16 @@ a.boton-us:hover {
 
 @media only screen and (min-width: 751px) and (max-width: 1300px) {
 
-  #mapaimagenhumano {
-    width: auto;
-    height: 700px;
+  .contenido {
+    flex-direction: column;
+  }
+
+  .derecha {
+    text-align: center;
   }
 
   #mapaimagenhumano label{
-    top: 120;
+    bottom: 0px;
   }
 }
 
@@ -480,4 +619,9 @@ a.boton-us:hover {
 
 .breadcrumb a:hover {
   text-decoration: underline; /* Añade subrayado al pasar el ratón por encima */
+}
+
+.breadcrumbContainer-dcha {
+  position: absolute;
+  right: 10%;
 }
