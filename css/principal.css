@@ -208,14 +208,7 @@ input[type="checkbox"]:checked+.txtcolapsable {
 }
 
 /****************************************************************************************/
-#mapaentrenamiento {
-  border: 2px solid red;
-}
 
-#mapaentrenamiento div {
-  display: inline-block;
-  overflow-x: visible;
-}
 
 /*Utilizamos la misma idea que la del mapa marino pero con varios contenedores para poder hacer todo más responsive*/
 
@@ -461,6 +454,10 @@ a.boton-us:hover {
   .contenido-vertical {
     width: 1000px;
     margin: auto;
+  }
+
+  #mapaentrenamiento > div {
+    display: flex;
   }
 
 }
