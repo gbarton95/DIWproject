@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,7 +29,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav me-auto">
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
               <ul class="dropdown-menu" data-bs-theme="dark">
@@ -38,7 +39,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
-              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+              <ul class="dropdown-menu" data-bs-theme="dark">
                 <li><a class="dropdown-item" href="contenido/tipos.html">Tipos</a></li>
                 <li><a class="dropdown-item" href="contenido/lugares.html">En Zaragoza (lugares)</a></li>
               </ul>
@@ -51,6 +52,12 @@
               </ul>
             </li>
           </ul>
+          <!-- Sonido que sonará en index, se escogerá el primer src compatible-->
+          <audio autoplay controls class="ml-auto col-sm-2 col-md-3">
+            <source src="img/himnozaragoza.mp3" type="audio/mp3">
+            <source src="img/himnozaragoza.ogg" type="audio/ogg">
+            No se ha podido reproducir el sonido
+          </audio>
         </div>
       </div>
     </nav>
@@ -62,22 +69,34 @@
       <div class="esp col-md-5"> <!--Columna izquierda-->
         <br>
         <h1>¡Bienvenidos a Deporte en Zaragoza!</h1>
-        <p>Nos enorgullece ser tu compañero en el emocionante viaje hacia un estilo de vida activo y saludable. Somos más que una página de deportes; somos tu fuente confiable de información, motivación y recursos para alcanzar tus metas de bienestar.<br><br>
+        <p>Nos enorgullece ser tu compañero en el emocionante viaje hacia un estilo de vida activo y saludable. Somos
+          más que una página de deportes; somos tu fuente confiable de información, motivación y recursos para alcanzar
+          tus metas de bienestar.<br><br>
 
-          En nuestro espacio dedicado al deporte, encontrarás artículos inspiradores, consejos de expertos y los beneficios del mundo del fitness. Desde rutinas de entrenamiento efectivas hasta reseñas de equipos y eventos deportivos, estamos aquí para mantenerte informado y motivado.<br><br>
+          En nuestro espacio dedicado al deporte, encontrarás artículos inspiradores, consejos de expertos y los
+          beneficios del mundo del fitness. Desde rutinas de entrenamiento efectivas hasta reseñas de equipos y eventos
+          deportivos, estamos aquí para mantenerte informado y motivado.<br><br>
 
-          La salud es un aspecto fundamental de nuestro enfoque. Exploramos temas relacionados con la nutrición, la salud mental y el bienestar general. Creemos en el equilibrio y en la importancia de cuidar tanto de tu cuerpo como de tu mente.<br><br>
+          La salud es un aspecto fundamental de nuestro enfoque. Exploramos temas relacionados con la nutrición, la
+          salud mental y el bienestar general. Creemos en el equilibrio y en la importancia de cuidar tanto de tu cuerpo
+          como de tu mente.<br><br>
 
           ¡Vamos juntos hacia un mejor tú!</p>
       </div>
       <div class="ing col-md-5"> <!--Columna izquierda-->
         <br>
         <h1>Welcome to Sport in Zaragoza!</h1>
-        <p>We are proud to be your partner on the exciting journey towards an active and healthy lifestyle. We are more than a sports page; We are your trusted source of information, motivation and resources to achieve your wellness goals.<br><br>
+        <p>We are proud to be your partner on the exciting journey towards an active and healthy lifestyle. We are more
+          than a sports page; We are your trusted source of information, motivation and resources to achieve your
+          wellness goals.<br><br>
 
-          In our space dedicated to sports, you will find inspiring articles, expert advice and the benefits of the world of fitness. From effective training routines to equipment reviews and sporting events, we're here to keep you informed and motivated.<br><br>
+          In our space dedicated to sports, you will find inspiring articles, expert advice and the benefits of the
+          world of fitness. From effective training routines to equipment reviews and sporting events, we're here to
+          keep you informed and motivated.<br><br>
 
-          Health is a fundamental aspect of our approach. We explore topics related to nutrition, mental health and general well-being. We believe in balance and the importance of taking care of both your body and your mind.<br><br>
+          Health is a fundamental aspect of our approach. We explore topics related to nutrition, mental health and
+          general well-being. We believe in balance and the importance of taking care of both your body and your
+          mind.<br><br>
 
           Let's go together towards a better you!</p>
       </div>
@@ -99,22 +118,31 @@
                 <img src="img/car04.jpg" class="d-block w-100 carousel-image" alt="Cuarta imagen">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
           </div>
         </div>
-        <div class="alert alert-warning alert-dismissible fade show text-center h-40 esp" role="alert"> <!--Nota de contacto--><!--FALTA CENTRAR-->
-          <p>¿Tienes alguna duda o quieres saber algo que no aparece aquí?<br><br><a href="contenido/formulario.html" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mandanos tus datos</a> y nos pondremos en contacto contigo</p>
+        <div class="alert alert-warning alert-dismissible fade show text-center h-40 esp" role="alert">
+          <!--Nota de contacto--><!--FALTA CENTRAR-->
+          <p>¿Tienes alguna duda o quieres saber algo que no aparece aquí?<br><br><a href="contenido/formulario.html"
+              class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Mandanos tus
+              datos</a> y nos pondremos en contacto contigo</p>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
-        <div class="alert alert-warning alert-dismissible fade show text-center h-40 ing" role="alert"> <!--Nota de contacto-->
-          <p>Do you have any questions or want to know something that does not appear here?<br><br><a href="content/formulario.html" class="link-info link-offset-2 link -underline-opacity-25 link-underline-opacity-100-hover">Send us your information</a> and we will contact you</p>
+        <div class="alert alert-warning alert-dismissible fade show text-center h-40 ing" role="alert">
+          <!--Nota de contacto-->
+          <p>Do you have any questions or want to know something that does not appear here?<br><br><a
+              href="content/formulario.html"
+              class="link-info link-offset-2 link -underline-opacity-25 link-underline-opacity-100-hover">Send us your
+              information</a> and we will contact you</p>
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
@@ -125,7 +153,8 @@
       <div class="container">
         <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
       </div>
-      <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sobre Nosotros</button>
+      <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Sobre
+        Nosotros</button>
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -142,7 +171,8 @@
                       <img src="img/gabyshark.jpeg" class="card-img-top img-fluid" alt="Gabriela Barton">
                       <div class="card-body">
                         <p class="card-text"><b>Gabriela Barton, 28 años.</b><br>
-                          La más amante de la naturaleza, me encantan el senderismo, los bichos y nadar. Tengo un perro especial, 2 trabajos, clases de DAW y club de crochet los martes.</p>
+                          La más amante de la naturaleza, me encantan el senderismo, los bichos y nadar. Tengo un perro
+                          especial, 2 trabajos, clases de DAW y club de crochet los martes.</p>
                       </div>
                     </div>
                   </div>
@@ -151,7 +181,8 @@
                       <img src="img/risas.jpeg" class="card-img-top img-fluid" alt="Javier Melendo">
                       <div class="card-body">
                         <p class="card-text"><b>Javier Melendo, 19 años.</b><br>
-                          Soy un chaval que estudia DAW en Los Enlaces y al que le gustan mucho los deportes, en concreto el fútbol y el baloncesto; también me gusta la programación back-end :)</p>
+                          Soy un chaval que estudia DAW en Los Enlaces y al que le gustan mucho los deportes, en
+                          concreto el fútbol y el baloncesto; también me gusta la programación back-end :)</p>
                       </div>
                     </div>
                   </div>
@@ -167,4 +198,5 @@
     </div>
   </div>
 </body>
+
 </html>
