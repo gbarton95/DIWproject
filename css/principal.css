@@ -650,3 +650,16 @@ label.bandera {
   width: 50px; /* Ancho de la parte visible de la imagen */
   height: 30px;
 }
+
+.sprite {
+  width: 130px;
+  height: 130px;
+  background-image: url('../img/sprite-sheet.webp');
+  animation: imagen 0.7s steps(8) infinite;
+  float: right;
+}
+
+@keyframes imagen {
+  0% { background-position: 0px 0; }
+  100% { background-position: -1040px 0; }
+}
