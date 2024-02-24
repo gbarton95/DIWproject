@@ -627,11 +627,13 @@ a.boton-us:hover {
   display: none;
 }
 
-#botonTraduccion:checked ~ .esp{
+#botonTraduccion:checked ~ .esp,
+#botonTraduccion:checked ~ div .esp {
   display: none;
 }
 
-#botonTraduccion:checked ~ .ing{
+#botonTraduccion:checked ~ .ing,
+#botonTraduccion:checked ~ div .ing {
   display: block;
 }
 
