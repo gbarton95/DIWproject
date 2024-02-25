@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="../css/principal.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-
 <body>
-  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
-    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
+  <!--Contenedor genérico de la página-->
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10">
+    
+    <!--Header y Navbar comunes-->
     <header class="container-fluid my-4 row align-items-center justify-content-evenly">
       <a href="../index.html" id="logo" class="col-sm-auto">
         <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
@@ -20,8 +21,6 @@
         <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
       </div>
     </header>
-
-    <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid ms-5">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -38,7 +37,8 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
-              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
                 <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
                 <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
               </ul>
@@ -54,62 +54,91 @@
         </div>
       </div>
     </nav>
+
     <!-- Contenedor principal -->
-    <br>
     <div class="container-fluid row">
-      <div class="breadcrumbContainer">
+      <!--Breadcrumbs-->
+      <div class="breadcrumbContainer mt-4 mb-0">
         <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Deportes >> En Zaragoza</p>
       </div>
-      <h1>En Zaragoza</h1>
-      <p>En Zaragoza existen muchas zonas gratuitas y con libre acceso para cualquier persona que quiera practicar deporte. Por ejemplo, si te gusta el fútbol o el baloncesto estas de suerte, ya que en Zaragoza hay una gran cantidad de pistas polivalentes entre estos dos deportes.<br>Además de los parques, las riberas del Ebro y del Canal, así como las zonas verdes en las que se pueden practicar diversos deportes (correr, ir en bici o patinar), en casi todos los barrios de Zaragoza hay potreros y/o pistas deportivas, ubicadas en solares, parques o jardines que podéis utilizar libremente, sin coste y sin requisitos previos. En cada barrio podéis encontrar las siguientes:</p>
-      <p class="d-inline-flex gap-1">
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Actur</button>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Delicias</button>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Oliver-Valdefierro</button>
-      </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              <ul class="list-group">
-                <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle García Márquez.</li>
-                <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle Margarita Xirgú.</li>
-                <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la plaza Ortilla (Avda de Ranillas).</li>
-                <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la avenida Pablo Iglesias (junto Avda. Pirineos).</li>
-                <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle El Coloso (Parque Goya).</li>
-                <li class="list-group-item">- Gimnasio en la calle para adultos, en la calle Poeta Luciano Gracia (junto al Estadio de Atletismo, frente al CPS).</li>
-              </ul>
-            </div>
-          </div>
+      
+      <!--Fila de contenido (textos y botones)-->
+      <div class="row"> 
+        <h1>En Zaragoza</h1>
+        <p>En Zaragoza existen muchas zonas gratuitas y con libre acceso para cualquier persona que quiera practicar
+          deporte. Por ejemplo, si te gusta el fútbol o el baloncesto estas de suerte, ya que en Zaragoza hay una gran
+          cantidad de pistas polivalentes entre estos dos deportes.<br>Además de los parques, las riberas del Ebro y del
+          Canal, así como las zonas verdes en las que se pueden practicar diversos deportes (correr, ir en bici o
+          patinar), en casi todos los barrios de Zaragoza hay potreros y/o pistas deportivas, ubicadas en solares,
+          parques
+          o jardines que podéis utilizar libremente, sin coste y sin requisitos previos. En cada barrio podéis encontrar
+          las siguientes:</p>
+        <p class="d-inline-flex gap-1">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample1" aria-expanded="false"
+            aria-controls="multiCollapseExample1">Actur</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample2" aria-expanded="false"
+            aria-controls="multiCollapseExample2">Delicias</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample3" aria-expanded="false"
+            aria-controls="multiCollapseExample3">Oliver-Valdefierro</button>
+        </p>
+      </div>
+      
+      <!--Fila de contenido (listas colapsables)-->
+      <div class="row"> 
+        <div id="multiCollapseExample1" class="col collapse multi-collapse card card-body">
+          <ul class="list-group">
+            <li class="fw-bold">En ACTUR:</li>
+            <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle García Márquez.
+            </li>
+            <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle Margarita Xirgú.
+            </li>
+            <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la plaza Ortilla (Avda de
+              Ranillas).</li>
+            <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la avenida Pablo Iglesias
+              (junto Avda. Pirineos).</li>
+            <li class="list-group-item">- 1 pista polivalente de baloncesto y fútbol sala en la calle El Coloso (Parque
+              Goya).</li>
+            <li class="list-group-item">- Gimnasio en la calle para adultos, en la calle Poeta Luciano Gracia (junto al
+              Estadio de Atletismo, frente al CPS).</li>
+          </ul>
         </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              <ul class="list-group">
-                <li class="list-group-item">- 2 pistas polivalentes donde jugar a fútbol sala, voleibol, patinaje artístico, 1 mesa de ping pong y un gimnasio abierto en el Parque Delicias.</li>
-                <li class="list-group-item">- 1 pista de fútbol sala y 1 una canasta en el Parque Castillo Palomar (calle Rioja con Avda. de Navarra). Solicitar su uso en el Pabellón Bombarda. Tel. 976 325 702.</li>
-                <li class="list-group-item">- 1 patinódromo de velocidad y 3 pistas de baloncesto en la Bozada, entre Vía Hispanidad y Juan Pablo I. Solicitar su uso en el Pabellón Ciudad de Zaragoza. Tel. 976 315 941.</li>
-                <li class="list-group-item">- Mesas con tablero de ajedrez, en el Parque Delicias, Parque Castillo Palomar, Parque Sedetaria (Monsalud), Pza. Santo Domingo Savio (Ciudad Jardín), Jardines Avempace y en los jardines Avicebrón (Bozada) y en la Pza. Galán Bergua.</li>
-              </ul>
-            </div>
-          </div>
+        <div id="multiCollapseExample2" class="col collapse multi-collapse card card-body">
+          <ul class="list-group">
+            <li class="fw-bold">En DELICIAS:</li>
+            <li class="list-group-item">- 2 pistas polivalentes donde jugar a fútbol sala, voleibol, patinaje artístico,
+              1 mesa de ping pong y un gimnasio abierto en el Parque Delicias.</li>
+            <li class="list-group-item">- 1 pista de fútbol sala y 1 una canasta en el Parque Castillo Palomar (calle
+              Rioja con Avda. de Navarra). Solicitar su uso en el Pabellón Bombarda. Tel. 976 325 702.</li>
+            <li class="list-group-item">- 1 patinódromo de velocidad y 3 pistas de baloncesto en la Bozada, entre Vía
+              Hispanidad y Juan Pablo I. Solicitar su uso en el Pabellón Ciudad de Zaragoza. Tel. 976 315 941.</li>
+            <li class="list-group-item">- Mesas con tablero de ajedrez, en el Parque Delicias, Parque Castillo Palomar,
+              Parque Sedetaria (Monsalud), Pza. Santo Domingo Savio (Ciudad Jardín), Jardines Avempace y en los jardines
+              Avicebrón (Bozada) y en la Pza. Galán Bergua.</li>
+          </ul>
         </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample3">
-            <div class="card card-body">
-              <ul class="list-group">
-                <li class="list-group-item">- 1 pista de baloncesto, 1 campo de tierra para fútbol sala y 1 pequeña pista de patinaje al final de la calle Océano Atlántico.</li>
-                <li class="list-group-item">- 1 mesa de ping pong en el Parque del Oeste.</li>
-                <li class="list-group-item">- 1 pista de patinaje en el Grupo General Gurrutia.</li>
-                <li class="list-group-item">- 1 pista polivalente de fútbol sala y de baloncesto en la calle Federico Ozanam.</li>
-              </ul>
-            </div>
-          </div>
+        <div id="multiCollapseExample3" class="col collapse multi-collapse card card-body">
+          <ul class="list-group">
+            <li class="fw-bold">En OLIVER-VALDEFIERRO:</li>
+            <li class="list-group-item">- 1 pista de baloncesto, 1 campo de tierra para fútbol sala y 1 pequeña pista de
+              patinaje al final de la calle Océano Atlántico.</li>
+            <li class="list-group-item">- 1 mesa de ping pong en el Parque del Oeste.</li>
+            <li class="list-group-item">- 1 pista de patinaje en el Grupo General Gurrutia.</li>
+            <li class="list-group-item">- 1 pista polivalente de fútbol sala y de baloncesto en la calle Federico
+              Ozanam.</li>
+          </ul>
         </div>
       </div>
+
+      <!--Alerta-->
       <div class="alert alert-primary" role="alert">
-        ¿Quieres asistir a eventos? Entra en la página oficial de <a href="https://www.zaragozadeporte.com/Destacados.asp">Zaragoza</a> para informarte de ellos
+        ¿Quieres asistir a eventos? Entra en la página oficial de <a
+          href="https://www.zaragozadeporte.com/Destacados.asp">Zaragoza</a> para informarte de ellos
       </div>
+
+      <!--Tabla-->
       <div class="d-none d-md-table">
         <p>Por aquí te dejamos los eventos más recientes:</p>
         <table class="table">
@@ -139,28 +168,36 @@
           </tbody>
         </table>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="../img/españaLetonia.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text"><h2>Clasificación EuroBasket</h2>Jueves 22 de Febrero</p>
-          <a href="https://www.gigantes.com/selecciones/eurobasket-2025/cuando-juega-espana-horarios-partidos-ventanas-fiba/" class="btn btn-primary">Saber más</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="../img/marcha.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text"><h2>Campeonato de España de marcha</h2>Domingo 25 de Febrero</p>
-          <a href="https://www.elperiodicodearagon.com/deportes/2024/02/20/campeonato-espana-marcha-zaragoza-domingo-98427614.html" class="btn btn-primary">Saber más</a>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="../img/baloncesto.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text"><h2>Torneo de baloncesto Juvenil</h2>Viernes 1 de Marzo</p>
-          <a href="https://www.feb.es/campeonatos.aspx" class="btn btn-primary">Saber más</a>
-        </div>
-      </div>
 
+      <!--Cartas-->
+      <div class="row justify-content-evenly">
+        <div class="card" style="width: 18rem;">
+          <img src="../img/españaLetonia.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Clasificación EuroBasket</h2>Jueves 22 de Febrero</p>
+            <a href="https://www.gigantes.com/selecciones/eurobasket-2025/cuando-juega-espana-horarios-partidos-ventanas-fiba/"
+              class="btn btn-primary">Saber más</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/marcha.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Campeonato de España de marcha</h2>Domingo 25 de Febrero</p>
+            <a href="https://www.elperiodicodearagon.com/deportes/2024/02/20/campeonato-espana-marcha-zaragoza-domingo-98427614.html"
+              class="btn btn-primary">Saber más</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/baloncesto.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <h2>Torneo de baloncesto Juvenil</h2>Viernes 1 de Marzo</p>
+            <a href="https://www.feb.es/campeonatos.aspx" class="btn btn-primary">Saber más</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Pie de página -->

@@ -6,17 +6,16 @@
   <title>Salud y deporte</title>
   <link rel="stylesheet" href="../css/principal.css">
 </head>
-
 <body>
-  <div class="todoCSS"> <!--Contenedor genérico de la página-->
+  <!--Contenedor genérico de la página-->
+  <div class="todoCSS"> 
+    <!--Header y Navbar comunes-->
     <header class="cabeceraCSS">
       <a href="../index.html" id="logo">
         <img src="../img/logoenlaces.png" alt="logo">
       </a>
       <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
     </header>
-
-    <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navegadorCSS">
       <ul id="menuNav">
         <li class="prim"><a href="#">Lo básico <span class="arrowDown">&#129171;</span></a>
@@ -42,6 +41,7 @@
 
     <!--Contenedor principal-->
     <div class="contenido">
+      <!--Breadcrumbs-->
       <div class="columna izquierda">
         <div class="breadcrumbContainer-dcha">
           <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Básico >> Beneficios y salud</p>
@@ -49,7 +49,8 @@
         <!--Columna izquierda-->
         <h2>¡Actívate y Vive! Descubre los Innumerables Beneficios del Deporte</h2>
         <p>El deporte no es solo una actividad física; es una fuente inagotable de beneficios que abarcan todas las edades y etapas de la vida. En esta sección, exploraremos los múltiples aspectos positivos que el deporte aporta a los jóvenes, adultos y niños, así como sus impactos en la salud física y mental.</p>
-        <div class="colapsables-falsos"><!--Colapsables con CSS-->
+        <!--Colapsables con CSS-->
+        <div class="colapsables-falsos">
           <label for="cbninos" class="boton-colapsar">Niños</label>
           <input type="checkbox" id="cbninos" class="fakecheckbox">
           <div class="txtcolapsable">
@@ -73,33 +74,29 @@
         </div>
         <h2>Beneficios sobre tu cuerpo</h2>
         <p>En el siguiente mapa puedes ver algunas de las ventajas de hacer ejercicio leve y moderado de forma habitual. Te lo agradecerán tus sistemas cardiovascular, respiratorio, músculo-esquelético y nervioso. También mejorará tu metabolismo y tus ritmos circadianos (si te cuesta dormirte... ¡prueba a hacer algo de deporte!).</p>
-
       </div>
-      <div class="columna derecha maphumano"> <!--Columna derecha-->
-
+      <!--Columna derecha, mapa de imagen CON map-->
+      <div class="columna derecha maphumano"> 
         <div id="mapaimagenhumano">
           <img src="../img/cuerpo-humano2.png" alt="El cuerpo humano" usemap="#humanmap">
           <p>Descubre las ventajas del ejercicio... (pasa el ratón por encima del cuerpo humano para descubrir más)</p>
           <map name="humanmap">
             <area alt="cabeza" class="cabeza" coords="113,36,120,22,133,21,145,15,150,19,157,13,167,18,176,14,181,21,192,37,190,47,190,54,179,66,177,72,167,76,159,75,157,83,147,84,135,76,129,83,127,88,120,92,114,93,109,91,114,93,119,78,113,71,108,62,107,54,105,44" shape="poly">
             <label for="cabeza">Salud mental: El ejercicio mejora la salud mental al aumentar la liberación de endorfinas, neurotransmisores que promueven el bienestar y reducen el estrés, y al proporcionar una vía para liberar tensiones emocionales, mejorando el estado de ánimo y la salud psicológica en general.</label>
-
             <area alt="energia" class="energia" coords="115,167,137,212,129,219,155,256,147,262,178,328,121,277,133,269,99,238,111,229,75,199" shape="poly">
             <label for="energia">Energía: al aumentar la circulación sanguínea y mejorar la eficiencia del sistema cardiovascular, conlleva a una mayor entrega de oxígeno y nutrientes a los tejidos, proporcionando así una sensación de vitalidad.</label>
-
             <area alt="corazon" class="corazon" coords="181,250,197,241,206,229,213,217,214,201,208,192,198,189,187,193,180,203,177,195,165,188,155,192,149,201,150,211,153,222,159,233,166,239" shape="poly">
             <label for="corazon">Protege tu corazón: el ejercicio es fundamental para mantener la salud cardiovascular al promover la función cardíaca óptima y reducir los factores de riesgo.</label>
-
             <area alt="estomago" class="estomago" coords="160,284,168,270,175,270,183,272,195,276,207,296,209,314,207,340,203,360,191,370,166,376,139,371,122,359,107,346,107,320,115,312,144,309,150,307,183,334" shape="poly">
             <label for="estomago">Metabolismo: el ejercicio contribuye a un metabolismo más eficiente y saludable, lo que puede ser crucial para mantener un peso corporal adecuado y prevenir diversas condiciones metabólicas.</label>
-
             <area alt="hueso" class="hueso" coords="95,425,88,405,95,387,118,379,139,389,145,413,133,429,122,435,117,537,129,543,131,555,119,566,106,565,98,549,105,537,109,433" shape="poly">
             <label for="hueso">Más fuerte: El entrenamiento de fuerza fortalece los huesos, ligamentos y tendones, mejorando la estabilidad y reduciendo el riesgo de lesiones, así como elevando tus habilidades y autoestima.</label>
           </map>
         </div>
       </div>
     </div>
-    <!-- Pie de página -->
+    
+    <!-- Pie de pagina -->
     <div class="footerCSS">
       <p>Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio CSS</p>
     </div>

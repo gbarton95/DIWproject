@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,15 @@
 </head>
 
 <body>
-  <div class="todoCSS"> <!--Contenedor genérico de la página-->
+  <!--Contenedor genérico de la página-->
+  <div class="todoCSS">
+    <!--Header y Navbar comunes-->
     <header class="cabeceraCSS">
       <a href="../index.html" id="logo">
         <img src="../img/logoenlaces.png" alt="logo">
       </a>
       <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
     </header>
-
-    <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navegadorCSS">
       <ul id="menuNav">
         <li class="prim"><a href="#">Lo básico <span class="arrowDown">&#129171;</span></a>
@@ -42,9 +43,15 @@
 
     <!--Contenedor principal-->
     <div class="contenido">
-      <div class="columna izquierda"> <!--Columna izquierda-->
+      <!--Columna izquierda-->
+      <div class="columna izquierda">
+        <!--Breadcrubms-->
+        <div class="breadcrumbContainer-dcha">
+          <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Comunidad >> Clubs y asociaciones</p><br>
+        </div>
         <h1>Clubes y asociaciones</h1>
-        <p class="noImportante">Si no ves bien los textos,<b class="importante"> manten el click pulsado en las localizaciones.</b></p>
+        <p class="noImportante">Si no ves bien los textos,<b class="importante"> manten el click pulsado en las
+            localizaciones.</b></p>
         <div class="fotorecorte">
           <img src="../img/mapa_clubes.jpg" alt="Descripción de la imagen" width="500px">
           <div class="nota1"></div>
@@ -58,37 +65,44 @@
           </div>
           <div class="nota2"></div>
           <div class="nota2Texto">
-            <p>En CD San Gregorio, no solo encontrarás la oportunidad de desarrollar tus habilidades futbolísticas, sino que también serás parte de una familia donde la camaradería y el espíritu de equipo son fundamentales. Ya seas un jugador experimentado o estés buscando empezar en este apasionante deporte, ¡todos son bienvenidos!</p>
+            <p>En CD San Gregorio, no solo encontrarás la oportunidad de desarrollar tus habilidades futbolísticas, sino
+              que también serás parte de una familia donde la camaradería y el espíritu de equipo son fundamentales. Ya
+              seas un jugador experimentado o estés buscando empezar en este apasionante deporte, ¡todos son
+              bienvenidos!</p>
           </div>
           <div class="nota3"></div>
           <div class="nota3Texto">
-            <p>Stadium Venecia es un Club Deportivo en Zaragoza donde encontrarás piscinas en Zaragoza, actividades deportivas y clases para adultos y niños. ¡Conócenos!</p>
+            <p>Stadium Venecia es un Club Deportivo en Zaragoza donde encontrarás piscinas en Zaragoza, actividades
+              deportivas y clases para adultos y niños. ¡Conócenos!</p>
           </div>
         </div>
       </div>
-      <div class="columna derecha"> <!--Columna derecha-->
-        <div class="breadcrumbContainer">
-          <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Comunidad >> Clubs y asociaciones</p>
+      <!--Columna derecha-->
+      <div class="columna derecha">
+        <!--Texto-->
+        <div>
+          <p><br>¡Descubre la vibrante escena de clubes y asociaciones en Zaragoza!<br><br>En la encantadora ciudad de
+            Zaragoza, la diversidad y la pasión por diferentes intereses se manifiestan a través de una amplia gama de
+            clubes y asociaciones. Ya sea que estés buscando un lugar para explorar tus hobbies, intereses profesionales
+            o simplemente conectarte con personas afines, Zaragoza ofrece una comunidad acogedora y dinámica que te
+            invita a participar.<br><br>Desde clubes deportivos que abarcan desde el fútbol hasta el ciclismo, pasando
+            por grupos de senderismo que te llevan a descubrir los impresionantes paisajes de Aragón, hasta asociaciones
+            culturales que celebran la rica historia y tradiciones de la región, hay algo para todos.</p>
         </div>
         <br>
-        <p>¡Descubre la vibrante escena de clubes y asociaciones en Zaragoza!<br><br>
-
-          En la encantadora ciudad de Zaragoza, la diversidad y la pasión por diferentes intereses se manifiestan a través de una amplia gama de clubes y asociaciones. Ya sea que estés buscando un lugar para explorar tus hobbies, intereses profesionales o simplemente conectarte con personas afines, Zaragoza ofrece una comunidad acogedora y dinámica que te invita a participar.<br><br>
-
-          Desde clubes deportivos que abarcan desde el fútbol hasta el ciclismo, pasando por grupos de senderismo que te llevan a descubrir los impresionantes paisajes de Aragón, hasta asociaciones culturales que celebran la rica historia y tradiciones de la región, hay algo para todos.<br><br>
-
-          <video width="540" height="360" controls autoplay>
-            <source src="../img/Zaragoza Deporte Municipal - Deporte Escolar (480p).mp4" type="video/mp4">
-            Video no disponible
-          </video>
-        </p>
+        <!--Inserción de vídeo-->
+        <video width="500px" controls>
+          <source src="../img/Zaragoza Deporte Municipal - Deporte Escolar (480p).mp4" type="video/mp4">
+          Video no disponible
+        </video>
       </div>
     </div>
-
+    
     <!-- Pie de página -->
     <div class="footerCSS">
       <p>Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio CSS</p>
     </div>
   </div>
 </body>
+
 </html>

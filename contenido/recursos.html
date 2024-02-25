@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="../css/principal.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-
 <body>
-  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
+  <!--Contenedor genérico de la página-->
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10">
+    <!--Header y Navbar comunes-->
     <header class="container-fluid my-4 row align-items-center justify-content-evenly">
       <a href="../index.html" id="logo" class="col-sm-auto">
         <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
@@ -40,38 +41,55 @@
         </li>
       </ul>
     </nav>
+
+    <!--Contenido-->
     <div class="container-fluid row">
+      <!--Breadcrumbs-->
       <div class="breadcrumbContainer">
         <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Comunidad >> Recursos</p>
       </div>
-      <div class="lightbox-gallery">
+      <!--Título de galería-->
+      <div class="lightbox-gallery container intro">
+        <h2 class="text-center">Recursos deportivos</h2>
+        <p class="text-center">Encuentra más sobre dónde y cómo puedes practicar ejercicio en Zaragoza</p>
+      </div>
+      <!--Galeria de imagenes con hipervínculos-->
+      <div class="row photos">
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.zaragozadeporte.com/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen1" src="../img/zaragozadeporte.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://deportes.unizar.es/" data-lightbox="photos"><img
+              class="img-fluid" alt="imagen2" src="../img/deporteunizar.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://conpequesenzgz.com/deporte/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen3" src="../img/peques.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.eiamm.com/" data-lightbox="photos"><img
+              class="img-fluid" alt="imagen4" src="../img/eaimm.png"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://patinar-zaragoza.com/" data-lightbox="photos"><img
+              class="img-fluid" alt="imagen5" src="../img/patinar.png"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a
+            href="https://www.soydezaragoza.es/horarios-y-precios-de-las-piscinas-de-zaragoza/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen6" src="../img/pisci.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.skateandfun.com/" data-lightbox="photos"><img
+              class="img-fluid" alt="imagen7" src="../img/skate.png"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a
+            href="https://www.heraldo.es/noticias/aragon/zaragoza/2015/07/28/gimnasios-gratis-en-zaragoza-255407.html"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen8" src="../img/gymaire.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.cierzolgtb.org/voley-femenino"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen9" src="../img/cierzo.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.amigoszaragoza.com/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen10" src="../img/amigoszgz.png"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://deportejovenzgz.blogspot.com/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen11" src="../img/zgzjoven.jpg"></a></div>
+        <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.zaragozadeportesostenible.es/"
+            data-lightbox="photos"><img class="img-fluid" alt="imagen12" src="../img/zgzsostenible.jpg"></a></div>
+      </div>
+      
+      <!--Pie de pagina-->
+      <div class="pie container-fluid bg-dark d-flex align-items-center p-3 mt-5">
         <div class="container">
-          <div class="intro">
-            <h2 class="text-center">Recursos deportivos</h2>
-            <p class="text-center">Encuentra más sobre dónde y cómo puedes practicar ejercicio en Zaragoza</p>
-          </div>
-          <div class="row photos">
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.zaragozadeporte.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen1" src="../img/zaragozadeporte.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://deportes.unizar.es/" data-lightbox="photos"><img class="img-fluid" alt="imagen2" src="../img/deporteunizar.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://conpequesenzgz.com/deporte/" data-lightbox="photos"><img class="img-fluid" alt="imagen3" src="../img/peques.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.eiamm.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen4" src="../img/eaimm.png"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://patinar-zaragoza.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen5" src="../img/patinar.png"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.soydezaragoza.es/horarios-y-precios-de-las-piscinas-de-zaragoza/" data-lightbox="photos"><img class="img-fluid" alt="imagen6" src="../img/pisci.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.skateandfun.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen7" src="../img/skate.png"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.heraldo.es/noticias/aragon/zaragoza/2015/07/28/gimnasios-gratis-en-zaragoza-255407.html" data-lightbox="photos"><img class="img-fluid" alt="imagen8" src="../img/gymaire.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.cierzolgtb.org/voley-femenino" data-lightbox="photos"><img class="img-fluid" alt="imagen9" src="../img/cierzo.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.amigoszaragoza.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen10" src="../img/amigoszgz.png"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://deportejovenzgz.blogspot.com/" data-lightbox="photos"><img class="img-fluid" alt="imagen11" src="../img/zgzjoven.jpg"></a></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="https://www.zaragozadeportesostenible.es/" data-lightbox="photos"><img class="img-fluid" alt="imagen12" src="../img/zgzsostenible.jpg"></a></div>
-          </div>
+          <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
         </div>
       </div>
     </div>
-    <div class="pie container-fluid bg-dark d-flex align-items-center p-3 mt-5">
-      <div class="container">
-        <p class="text-white m-0">Javier Melendo &#x2042 Gabriela Barton | DIW | Sitio Bootstrap</p>
-      </div>
-    </div>
-  </div>
 </body>
+
 </html>

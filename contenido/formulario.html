@@ -10,8 +10,10 @@
 </head>
 
 <body>
-  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
-    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
+  <!--Contenedor genérico de la página-->
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> 
+    
+    <!--Header y Navbar comunes-->
     <header class="container-fluid my-4 row align-items-center justify-content-evenly">
       <a href="../index.html" id="logo" class="col-sm-auto">
         <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
@@ -20,8 +22,6 @@
         <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
       </div>
     </header>
-
-    <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid ms-5">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -38,7 +38,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
-              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+              <ul class="dropdown-menu" data-bs-theme="dark">
                 <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
                 <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
               </ul>
@@ -54,12 +54,14 @@
         </div>
       </div>
     </nav>
+    
     <!-- Contenedor principal -->
     <div class="container-fluid row">
-      <div class="breadcrumbContainer">
+      <!---Breadcrumbs-->
+      <div class="breadcrumbContainer mt-3">
         <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Formulario</p>
       </div>
-      <br>
+      
       <!-- Formulario -->
       <form id="miFormulario">
         <div class="mb-3">
@@ -91,11 +93,10 @@
         <div class="alert alert-danger" role="alert">
           Lee bien lo que pone y acepta los checkbox!
         </div>
-        <input type="submit" value="Enviar">
-
+        <input type="submit" value="Enviar"><br><br>
       </form>
     </div>
-    <br>
+
     <!-- Pie de página -->
     <div class="pie container-fluid bg-dark d-flex align-items-center p-3">
       <div class="container">

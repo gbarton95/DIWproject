@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="../css/principal.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
-
 <body>
-  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10"> <!--Contenedor genérico de la página-->
-    <!--Header (mirar css para colores y si se quiere cambiar la letra (fw-bold))-->
+  <!--Contenedor genérico de la página-->
+  <div class="container-fluid col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10">
+
+    <!--Header y Navbar comunes-->
     <header class="container-fluid my-4 row align-items-center justify-content-evenly">
       <a href="../index.html" id="logo" class="col-sm-auto">
         <img src="../img/logoenlaces.png" alt="logo" class="img-fluid">
@@ -20,8 +21,6 @@
         <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
       </div>
     </header>
-
-    <!--Navbar (también como en el ejercicio de clase)-->
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid ms-5">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -38,7 +37,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
-              <ul class="dropdown-menu" data-bs-theme="dark"> <!--En dark me gustaba mas, si quieres el desplegable en blanco borra lo de data-bs-->
+              <ul class="dropdown-menu" data-bs-theme="dark">
                 <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
                 <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
               </ul>
@@ -54,19 +53,31 @@
         </div>
       </div>
     </nav>
+
     <!-- Contenedor principal -->
-    <br>
     <div class="container-fluid row">
-      <div class="breadcrumbContainer">
+      <!--Breadcrumbs-->
+      <div class="breadcrumbContainer mt-4 mb-0">
         <p class="breadcrumb"><a href="../index.html">Inicio</a> >> Deportes >> Tipos</p>
       </div>
+
+      <!--Texto-->
       <h1>Tipos de deportes</h1>
-      <p>Los tipos de deportes existentes son muy diversos. Si se indaga sobre actividades deportivas que pueden ponerse en práctica, no alcanzaría un solo post para mencionar todas las posibilidades; incluso muchas de éstas son desconocidas para la gente. Para distinguir los tipos de deportes, comunes y no comunes, basta con centrarse en una serie de categorías que engloban todas las prácticas deportivas del mundo.
-        Los grupos donde entraría a formar parte cualquier tipo de deporte, por categorías deportivas, son los siguientes: deportes de equipo, deportes de pelota, deportes acuáticos, deportes de montaña, deportes de aventura, deportes de fuerza, deportes extremos, deportes de tiro y deportes de motor.</p>
-      <p>Cabe destacar que, durante los últimos años, actividades electrónicas como los videojuegos de estrategia, videojuegos de disparos y videojuegos multijugadores, se están empezando a considerar deportes. Otro tipo de deportes populares, más peculiares respecto a los habituales, son el ajedrez y la pesca.
+      <p>Los tipos de deportes existentes son muy diversos. Si se indaga sobre actividades deportivas que pueden ponerse
+        en práctica, no alcanzaría un solo post para mencionar todas las posibilidades; incluso muchas de éstas son
+        desconocidas para la gente. Para distinguir los tipos de deportes, comunes y no comunes, basta con centrarse en
+        una serie de categorías que engloban todas las prácticas deportivas del mundo.
+        Los grupos donde entraría a formar parte cualquier tipo de deporte, por categorías deportivas, son los
+        siguientes: deportes de equipo, deportes de pelota, deportes acuáticos, deportes de montaña, deportes de
+        aventura, deportes de fuerza, deportes extremos, deportes de tiro y deportes de motor.<br><br>
+        Cabe destacar que, durante los últimos años, actividades electrónicas como los videojuegos de estrategia,
+        videojuegos de disparos y videojuegos multijugadores, se están empezando a considerar deportes. Otro tipo de
+        deportes populares, más peculiares respecto a los habituales, son el ajedrez y la pesca.
         En este post se citan los deportes más conocidos, que engloban cada una de estas categorías.</p>
-      <p>Algunos ejemplos de tipos de deportes son:</p>
-      <div class="d-none d-md-table"><!--en movil no se ve-->
+
+      <!--Tabla invisible para móvil/pequeño-->
+      <div class="d-none d-md-table">
+        <p>Algunos ejemplos de tipos de deportes son:</p>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -94,16 +105,25 @@
           </tbody>
         </table>
       </div>
+
+      <!--Alerta con link-->
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Si quieres informarte más sobre los tipos de deporte, entra <a href="https://sportsmedicinesystems.com/deportes/tipos-de-deporte/">aquí</a>.</strong>
+        <strong>Si quieres informarte más sobre los tipos de deporte, entra <a
+            href="https://sportsmedicinesystems.com/deportes/tipos-de-deporte/">aquí</a>.</strong>
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
+
+      <!--Carousel de imagenes-->
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -131,11 +151,13 @@
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
@@ -151,4 +173,5 @@
     </div>
   </div>
 </body>
+
 </html>

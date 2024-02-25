@@ -1,3 +1,4 @@
+/* Generales */
 body,
 html {
   margin: 0;
@@ -25,9 +26,29 @@ html {
   margin: auto;
 }
 
+.contenido {
+  display: flex;
+  height: 100%;
+  padding: 10px 50px;
+}
+
+.contenido-vertical {
+  padding: 20px 50px;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+.carousel-image {
+  height: 300px;
+  object-fit: cover;
+}
 
 /****************************************************************************************/
 
+/* Cabecera */
 .cabeceraCSS {
   display: flex;
   justify-content: space-around;
@@ -51,9 +72,25 @@ html {
   height: 90px;
 }
 
+.titulo {
+  background-image: linear-gradient(#34f9fc, #3146fa);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
 
+#logo {
+  width: 300px;
+}
 
 /****************************************************************************************/
+
+/* Barra de navegación */
+.navbar {
+  background-color: #34f9fc;
+}
 
 .navegadorCSS {
   background-color: #34f9fc;
@@ -75,7 +112,6 @@ ul {
   padding: 0;
 }
 
-/*Añado estilo básico a los hijos más anidados*/
 .prim li a {
   display: block;
   background-color: #212529;
@@ -103,7 +139,6 @@ ul {
   position: absolute;
 }
 
-/*El estilo de los enlaces del menú con clase prim*/
 .navegadorCSS #menuNav li.prim>a {
   display: flex;
   background-color: #34f9fc;
@@ -113,7 +148,6 @@ ul {
   margin-left: 5px;
 }
 
-/*Aparece la sublista cuando hago hover sobre el padre directo*/
 .navegadorCSS #menuNav li:hover>ul {
   display: block;
 }
@@ -124,21 +158,42 @@ span.arrowDown {
   margin-top: 2px;
 }
 
+
 /****************************************************************************************/
 
-.contenido {
+/* Footer */
+.footerCSS {
   display: flex;
-  height: 100%;
-  padding: 10px 50px;
+  align-items: center;
+  background-color: #212529;
+  color: white;
+  width: 100%;
+  height: 70px;
+  margin-top: auto;
 }
 
-.contenido-vertical {
-  padding: 20px 50px;
-  margin: 10px;
+.footerCSS p {
+  padding-left: 40px;
 }
+
+a.boton-us {
+  text-decoration: none;
+  color: white;
+  background-color: #0d6efd;
+  padding: 8px 18px 8px 18px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+a.boton-us:hover {
+  background-color: #0b5ed7;
+}
+
 
 /****************************************************************************************/
 
+/* Pagina salud, textos colapsables */
 .colapsables-falsos {
   padding: 20px;
 }
@@ -170,9 +225,9 @@ input[type="checkbox"]:checked+.txtcolapsable {
   z-index: 2;
 }
 
-
 /****************************************************************************************/
 
+/* Pagina salud, mapa de imagen */
 #mapaimagenhumano {
   width: 500px;
   position: relative;
@@ -209,9 +264,7 @@ input[type="checkbox"]:checked+.txtcolapsable {
 
 /****************************************************************************************/
 
-
-/*Utilizamos la misma idea que la del mapa marino pero con varios contenedores para poder hacer todo más responsive*/
-
+/* Pagina salud, mapa de imagen SIN map */
 /*Todos los contenedores principales comparten las mismas características: */
 #mapaentrenamientoA, #mapaentrenamientoB, #mapaentrenamientoC, #mapaentrenamientoD, #mapaentrenamientoE, #mapaentrenamientoF{
   position: relative;
@@ -230,189 +283,279 @@ input[type="checkbox"]:checked+.txtcolapsable {
 #mapaentrenamientoA{
   background-image: url(../img/entrenamientoA.png);
 }
-
 #mapaentrenamientoB{
   background-image: url(../img/entrenamientoB.png);
 }
-
 #mapaentrenamientoC{
   background-image: url(../img/entrenamientoC.png);
 }
-
 #mapaentrenamientoD{
   background-image: url(../img/entrenamientoD.png);
 }
-
 #mapaentrenamientoE{
   background-image: url(../img/entrenamientoE.png);
 }
-
 #mapaentrenamientoF{
   background-image: url(../img/entrenamientoF.png);
 }
 
 /*Y ahora, especificar el hover de cada elemento individual*/
-
 #entrenamiento1 {
   top: 0;
 }
-
 #entrenamiento1:hover {
   background: url(../img/entrenamientoA.png) -10px 229px;
 }
-
 #entrenamiento2 {
   left: 200px;
 }
-
 #entrenamiento2:hover {
   background: url(../img/entrenamientoA.png) -210px 229px;
 }
-
 #entrenamiento3 {
   left: 0;
 }
-
 #entrenamiento3:hover {
   background: url(../img/entrenamientoB.png) -10px 220px;
 }
-
 #entrenamiento4 {
   left: 200px;
 }
-
 #entrenamiento4:hover {
   background: url(../img/entrenamientoB.png) -210px 220px;
 }
-
 #entrenamiento5 {
   top: 0;
 }
-
 #entrenamiento5:hover {
   background: url(../img/entrenamientoC.png) 0px 230px;
 }
-
 #entrenamiento6 {
   left: 200px;
 }
-
 #entrenamiento6:hover {
   background: url(../img/entrenamientoC.png) 200px 230px;
 }
-
 #entrenamiento7 {
   left: 0;
 }
-
 #entrenamiento7:hover {
   background: url(../img/entrenamientoD.png) -5px 229px;
 }
-
 #entrenamiento8 {
   left: 200px;
 }
-
 #entrenamiento8:hover {
   background: url(../img/entrenamientoD.png) -200px 237px;
 }
-
 #entrenamiento9 {
   left: 0;
 }
-
 #entrenamiento9:hover {
   background: url(../img/entrenamientoE.png) -5px 230px;
 }
-
 #entrenamiento10 {
   left: 200px;
 }
-
 #entrenamiento10:hover {
   background: url(../img/entrenamientoE.png) -210px 230px;
 }
-
 #entrenamiento11 {
   left: 0px;
 }
-
 #entrenamiento11:hover {
   background: url(../img/entrenamientoF.png) 0px 238px;
 }
-
 #entrenamiento12 {
   left: 200px;
 }
-
 #entrenamiento12:hover {
   background: url(../img/entrenamientoF.png) -200px 235px;
 }
 
 /****************************************************************************************/
 
+/* Pagina comunidad, pseudoclases HOVER, ACTIVE y NOT*/
+.fotorecorte {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
 
-.footerCSS {
-  display: flex;
-  align-items: center;
-  background-color: #212529;
+/* Estilos comunes para todas las notas */
+.nota1, .nota2, .nota3,
+.nota1Texto, .nota2Texto, .nota3Texto {
+  position: absolute;
+  transform: translate(-50%, 10px);
+  background-color: black;
   color: white;
-  width: 100%;
-  height: 70px;
-  margin-top: auto;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
 }
 
-.footerCSS p {
-  padding-left: 40px;
+.nota1 {
+  top: 140px;
+  left: 35%;
+  width: 90px;
+  height: 20px;
 }
 
-#logo {
-  width: 300px;
+.nota1Texto{
+  top: 0px;
+  left: 30%;
+  font-size: 10px;
+  transition: opacity 0.3s ease;
 }
 
-.titulo {
-  background-image: linear-gradient(#34f9fc, #3146fa);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.nota1:hover ~ .nota1Texto {
+  opacity: 1;
 }
 
-.navbar {
-  background-color: #34f9fc;
+.nota1:active ~ .nota1Texto {
+  font-size: 13px;
 }
 
-.carousel-image {
-  height: 300px;
-  object-fit: cover;
+.nota2 {
+  top: 120px;
+  left: 70%;
+  width: 80px;
+  height: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
+.nota2Texto{
+  top: 200px;
+  left: 50%;
+  font-size: 10px;
+  transition: opacity 0.3s ease;
 }
 
-a.boton-us {
-  text-decoration: none;
-  color: white;
-  background-color: #0d6efd;
-  padding: 8px 18px 8px 18px;
-  border-radius: 6px;
-  margin-left: auto;
-  margin-right: 15px;
+.nota2:hover ~ .nota2Texto {
+  opacity: 1;
 }
 
-a.boton-us:hover {
-  background-color: #0b5ed7;
+.nota2:active ~ .nota2Texto {
+  font-size: 13px;
+}
+
+.nota3 {
+  top: 250px;
+  left: 60%;
+  width: 70px;
+  height: 20px;
+}
+
+.nota3Texto{
+  top: 250px;
+  left: 25%;
+  width: 200px;
+  font-size: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.nota3:hover ~ .nota3Texto {
+  opacity: 1;
+}
+
+.nota3:active ~ .nota3Texto {
+  font-size: 13px;
+}
+
+.importante {
+  color: red;
+}
+
+.noImportante:not(.importante) {
+  color: black;
+}
+
+
+/****************************************************************************************/
+
+/*Breadcrumbs*/
+.breadcrumb{
+  float: right;
+}
+
+.breadcrumbContainer {
+  float: right ;
+  margin-top: 15px; /* Ajusta el margen superior según sea necesario */
+}
+
+.breadcrumb {
+  margin: 0; 
+  padding: 0; 
+  font-size: 14px; 
+  color: #333; 
+}
+
+.breadcrumb a {
+  text-decoration: none; 
+  color: #333;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbContainer-dcha {
+  position: absolute;
+  right: 10%;
 }
 
 /****************************************************************************************/
 
+/*Traducción español-ingles con boton*/
+.ing{
+  display: none;
+}
+
+#botonTraduccion:checked ~ .esp,
+#botonTraduccion:checked ~ div .esp {
+  display: none;
+}
+
+#botonTraduccion:checked ~ .ing,
+#botonTraduccion:checked ~ div .ing {
+  display: block;
+}
+
+#botonTraduccion{
+  display: none;
+}
+
+label.bandera {
+  width: 50px;
+  height: 33px;
+  background-image: url('../img/españa.png');
+}
+
+#botonTraduccion:checked + .bandera {
+  background-image: url('../img/inglaterra.png'); 
+  width: 50px; 
+  height: 30px;
+}
+
+/****************************************************************************************/
+
+/* Sprite */
+.sprite {
+  width: 130px;
+  height: 130px;
+  background-image: url('../img/sprite-sheet.webp');
+  animation: imagen 0.7s steps(8) infinite;
+  float: right;
+}
+
+@keyframes imagen {
+  0% { background-position: 0px 0; }
+  100% { background-position: -1040px 0; }
+}
+
+
+/****************************************************************************************/
+
+/* Screen responsiveness */
 @media only screen and (max-width: 750px) {
 
   .contenido {
@@ -452,7 +595,7 @@ a.boton-us:hover {
   }
 
   .contenido-vertical {
-    width: 1000px;
+    width: 800px;
     margin: auto;
   }
 
@@ -460,208 +603,4 @@ a.boton-us:hover {
     display: flex;
   }
 
-}
-
-
-/****************************************************************************************/
-
-
-.fotorecorte {
-  position: relative;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.nota1 {
-  position: absolute;
-  top: 140px;
-  left: 35%;
-  width: 90px;
-  height: 20px;
-  transform: translate(-50%, 10px);
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-}
-
-.nota1Texto{
-  position: absolute;
-  top: 0px;
-  left: 30%;
-  font-size: 10px;
-  transform: translate(-50%, 10px);
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nota1:hover ~ .nota1Texto {
-  opacity: 1;
-}
-
-.nota1:active ~ .nota1Texto {
-  font-size: 13px;
-}
-
-.nota2 {
-  position: absolute;
-  top: 120px;
-  left: 70%;
-  width: 80px;
-  height: 20px;
-  transform: translate(-50%, 10px);
-  background-color: red;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity:0;
-}
-
-.nota2Texto{
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  font-size: 10px;
-  transform: translate(-50%, 10px);
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nota2:hover ~ .nota2Texto {
-  opacity: 1;
-}
-
-.nota2:active ~ .nota2Texto {
-  font-size: 13px;
-}
-
-.nota3 {
-  position: absolute;
-  top: 250px;
-  left: 60%;
-  width: 70px;
-  height: 20px;
-  transform: translate(-50%, 10px);
-  background-color: red;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-}
-
-.nota3Texto{
-  position: absolute;
-  top: 250px;
-  left: 20%;
-  width: 200px;
-  font-size: 10px;
-  transform: translate(-50%, 10px);
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nota3:hover ~ .nota3Texto {
-  opacity: 1;
-}
-
-.nota3:active ~ .nota3Texto {
-  font-size: 13px;
-}
-
-.importante {
-  color: red;
-}
-
-/* Estilo para el texto no importante */
-.noImportante:not(.importante) {
-  color: black;
-}
-
-
-/****************************************************************************************/
-
-.breadcrumb{
-  float: right;
-}
-
-.breadcrumbContainer {
-  float: right ;
-  margin-top: 15px; /* Ajusta el margen superior según sea necesario */
-}
-
-.breadcrumb {
-  margin: 0; /* Elimina el margen predeterminado */
-  padding: 0; /* Elimina el relleno predeterminado */
-  font-size: 14px; /* Tamaño de fuente deseado */
-  color: #333; /* Color de texto deseado */
-}
-
-.breadcrumb a {
-  text-decoration: none; /* Quita el subrayado del enlace */
-  color: #333; /* Color de texto deseado */
-}
-
-.breadcrumb a:hover {
-  text-decoration: underline; /* Añade subrayado al pasar el ratón por encima */
-}
-
-.breadcrumbContainer-dcha {
-  position: absolute;
-  right: 10%;
-}
-
-.ing{
-  display: none;
-}
-
-#botonTraduccion:checked ~ .esp,
-#botonTraduccion:checked ~ div .esp {
-  display: none;
-}
-
-#botonTraduccion:checked ~ .ing,
-#botonTraduccion:checked ~ div .ing {
-  display: block;
-}
-
-#botonTraduccion{
-  display: none;
-}
-
-label.bandera {
-  width: 50px;
-  height: 33px;
-  background-image: url('../img/españa.png');
-}
-
-#botonTraduccion:checked + .bandera {
-  background-image: url('../img/inglaterra.png'); /* Ruta de la segunda imagen */
-  width: 50px; /* Ancho de la parte visible de la imagen */
-  height: 30px;
-}
-
-.sprite {
-  width: 130px;
-  height: 130px;
-  background-image: url('../img/sprite-sheet.webp');
-  animation: imagen 0.7s steps(8) infinite;
-  float: right;
-}
-
-@keyframes imagen {
-  0% { background-position: 0px 0; }
-  100% { background-position: -1040px 0; }
 }
