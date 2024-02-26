@@ -676,6 +676,19 @@ label.bandera {
     padding: 0px;
   }
 
+  .navegadorCSS #menuNav li.prim>a {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .navegadorCSS li ul {
+    position: static;
+    display: block;
+
+
+
+  border: 3px solid red;
+  }
 
   .hamburguesa {
     display: block;
