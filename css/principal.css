@@ -440,6 +440,10 @@ input[type="checkbox"]:checked+.txtcolapsable {
   margin-right: 20px;
 }
 
+.fotorecorte img {
+  width: 500px;
+}
+
 /* Estilos comunes para todas las notas */
 .nota1,
 .nota2,
