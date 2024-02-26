@@ -680,8 +680,9 @@ label.bandera {
   }
 
   .navegadorCSS li ul {
-    display: none;
-    position: block;
+    position: static;
+    display: block;
+
 
 
   border: 3px solid red;
