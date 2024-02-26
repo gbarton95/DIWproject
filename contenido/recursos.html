@@ -21,27 +21,37 @@
         <h1 class="text-center fw-bold titulo">Deporte en Zaragoza</h1>
       </div>
     </header>
-    <nav class="navegadorCSS mb-5">
-      <ul id="menuNav">
-        <li class="prim"><a href="#">Lo básico <span class="arrowDown">&#129171;</span></a>
-          <ul>
-            <li><a href="salud.html">Beneficios y salud</a></li>
-            <li><a href="consejos.html">Consejos</a></li>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid ms-5">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Lo basico</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="salud.html">Beneficios</a></li>
+                <li><a class="dropdown-item" href="consejos.html">Consejos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Deportes</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="tipos.html">Tipos</a></li>
+                <li><a class="dropdown-item" href="lugares.html">En Zaragoza (lugares)</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Comunidad</a>
+              <ul class="dropdown-menu" data-bs-theme="dark">
+                <li><a class="dropdown-item" href="comunidad.html">Clubs y asociaciones</a></li>
+                <li><a class="dropdown-item" href="recursos.html">Recursos y enlaces útiles</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-        <li class="prim"><a href="#">Deportes<span class="arrowDown">&#129171;</span></a>
-          <ul>
-            <li><a href="tipos.html">Tipos</a></li>
-            <li><a href="lugares.html">En Zaragoza</a></li>
-          </ul>
-        </li>
-        <li class="prim"><a href="#">Comunidad<span class="arrowDown">&#129171;</span></a>
-          <ul>
-            <li><a href="comunidad.html">Clubs y asociaciones</a></li>
-            <li><a href="recursos.html">Recursos y enlaces útiles</a></li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
 
     <!--Contenido-->
