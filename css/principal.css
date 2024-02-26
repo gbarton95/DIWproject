@@ -37,7 +37,12 @@ html {
   margin: 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 500;
 }
 
@@ -164,19 +169,16 @@ span.arrowDown {
 }
 
 .hamburguesa {
+  display: none;
   font-size: 25px;
   cursor: pointer;
   border: 1px solid rgb(154, 174, 182);
   border-radius: 5px;
-  height: fit-content;
   padding: 0px 15px;
   opacity: 0.8;
+  width: fit-content;
+  margin: 5px 0px 5px 50px;
 }
-
-.hamburguesa:active {
-  outline: 4px solid #125758;
-}
-
 
 /****************************************************************************************/
 
@@ -255,11 +257,11 @@ input[type="checkbox"]:checked+.txtcolapsable {
   margin: 20px;
 }
 
-#mapaimagenhumano img{
+#mapaimagenhumano img {
   height: 75%;
 }
 
-#mapaimagenhumano label{
+#mapaimagenhumano label {
   display: none;
   text-align: left;
   background-color: lightblue;
@@ -271,12 +273,11 @@ input[type="checkbox"]:checked+.txtcolapsable {
   font-weight: 400;
 }
 
-#mapaimagenhumano .cabeza:hover + label,
-#mapaimagenhumano .corazon:hover + label,
-#mapaimagenhumano .hueso:hover + label,
-#mapaimagenhumano .estomago:hover + label,
-#mapaimagenhumano .energia:hover + label
- {
+#mapaimagenhumano .cabeza:hover+label,
+#mapaimagenhumano .corazon:hover+label,
+#mapaimagenhumano .hueso:hover+label,
+#mapaimagenhumano .estomago:hover+label,
+#mapaimagenhumano .energia:hover+label {
   display: inline-block;
 
 }
@@ -285,36 +286,51 @@ input[type="checkbox"]:checked+.txtcolapsable {
 
 /* Pagina salud, mapa de imagen SIN map */
 /*Todos los contenedores principales comparten las mismas características: */
-#mapaentrenamientoA, #mapaentrenamientoB, #mapaentrenamientoC, #mapaentrenamientoD, #mapaentrenamientoE, #mapaentrenamientoF{
+#mapaentrenamientoA,
+#mapaentrenamientoB,
+#mapaentrenamientoC,
+#mapaentrenamientoD,
+#mapaentrenamientoE,
+#mapaentrenamientoF {
   position: relative;
   width: 400px;
   height: 220px;
   margin: 10px auto;
 }
 
-#mapaentrenamientoA div, #mapaentrenamientoB div, #mapaentrenamientoC div, #mapaentrenamientoD div, #mapaentrenamientoE div, #mapaentrenamientoF div{
+#mapaentrenamientoA div,
+#mapaentrenamientoB div,
+#mapaentrenamientoC div,
+#mapaentrenamientoD div,
+#mapaentrenamientoE div,
+#mapaentrenamientoF div {
   position: absolute;
   width: 200px;
   height: 220px;
 }
 
 /*Pero hay que especificar la imagen de cada uno: */
-#mapaentrenamientoA{
+#mapaentrenamientoA {
   background-image: url(../img/entrenamientoA.png);
 }
-#mapaentrenamientoB{
+
+#mapaentrenamientoB {
   background-image: url(../img/entrenamientoB.png);
 }
-#mapaentrenamientoC{
+
+#mapaentrenamientoC {
   background-image: url(../img/entrenamientoC.png);
 }
-#mapaentrenamientoD{
+
+#mapaentrenamientoD {
   background-image: url(../img/entrenamientoD.png);
 }
-#mapaentrenamientoE{
+
+#mapaentrenamientoE {
   background-image: url(../img/entrenamientoE.png);
 }
-#mapaentrenamientoF{
+
+#mapaentrenamientoF {
   background-image: url(../img/entrenamientoF.png);
 }
 
@@ -322,72 +338,95 @@ input[type="checkbox"]:checked+.txtcolapsable {
 #entrenamiento1 {
   top: 0;
 }
+
 #entrenamiento1:hover {
   background: url(../img/entrenamientoA.png) -10px 229px;
 }
+
 #entrenamiento2 {
   left: 200px;
 }
+
 #entrenamiento2:hover {
   background: url(../img/entrenamientoA.png) -210px 229px;
 }
+
 #entrenamiento3 {
   left: 0;
 }
+
 #entrenamiento3:hover {
   background: url(../img/entrenamientoB.png) -10px 220px;
 }
+
 #entrenamiento4 {
   left: 200px;
 }
+
 #entrenamiento4:hover {
   background: url(../img/entrenamientoB.png) -210px 220px;
 }
+
 #entrenamiento5 {
   top: 0;
 }
+
 #entrenamiento5:hover {
   background: url(../img/entrenamientoC.png) 0px 230px;
 }
+
 #entrenamiento6 {
   left: 200px;
 }
+
 #entrenamiento6:hover {
   background: url(../img/entrenamientoC.png) 200px 230px;
 }
+
 #entrenamiento7 {
   left: 0;
 }
+
 #entrenamiento7:hover {
   background: url(../img/entrenamientoD.png) -5px 229px;
 }
+
 #entrenamiento8 {
   left: 200px;
 }
+
 #entrenamiento8:hover {
   background: url(../img/entrenamientoD.png) -200px 237px;
 }
+
 #entrenamiento9 {
   left: 0;
 }
+
 #entrenamiento9:hover {
   background: url(../img/entrenamientoE.png) -5px 230px;
 }
+
 #entrenamiento10 {
   left: 200px;
 }
+
 #entrenamiento10:hover {
   background: url(../img/entrenamientoE.png) -210px 230px;
 }
+
 #entrenamiento11 {
   left: 0px;
 }
+
 #entrenamiento11:hover {
   background: url(../img/entrenamientoF.png) 0px 238px;
 }
+
 #entrenamiento12 {
   left: 200px;
 }
+
 #entrenamiento12:hover {
   background: url(../img/entrenamientoF.png) -200px 235px;
 }
@@ -402,8 +441,12 @@ input[type="checkbox"]:checked+.txtcolapsable {
 }
 
 /* Estilos comunes para todas las notas */
-.nota1, .nota2, .nota3,
-.nota1Texto, .nota2Texto, .nota3Texto {
+.nota1,
+.nota2,
+.nota3,
+.nota1Texto,
+.nota2Texto,
+.nota3Texto {
   position: absolute;
   transform: translate(-50%, 10px);
   background-color: black;
@@ -420,18 +463,18 @@ input[type="checkbox"]:checked+.txtcolapsable {
   height: 20px;
 }
 
-.nota1Texto{
+.nota1Texto {
   top: 0px;
   left: 30%;
   font-size: 10px;
   transition: opacity 0.3s ease;
 }
 
-.nota1:hover ~ .nota1Texto {
+.nota1:hover~.nota1Texto {
   opacity: 1;
 }
 
-.nota1:active ~ .nota1Texto {
+.nota1:active~.nota1Texto {
   font-size: 13px;
 }
 
@@ -442,18 +485,18 @@ input[type="checkbox"]:checked+.txtcolapsable {
   height: 20px;
 }
 
-.nota2Texto{
+.nota2Texto {
   top: 200px;
   left: 50%;
   font-size: 10px;
   transition: opacity 0.3s ease;
 }
 
-.nota2:hover ~ .nota2Texto {
+.nota2:hover~.nota2Texto {
   opacity: 1;
 }
 
-.nota2:active ~ .nota2Texto {
+.nota2:active~.nota2Texto {
   font-size: 13px;
 }
 
@@ -464,7 +507,7 @@ input[type="checkbox"]:checked+.txtcolapsable {
   height: 20px;
 }
 
-.nota3Texto{
+.nota3Texto {
   top: 250px;
   left: 25%;
   width: 200px;
@@ -472,11 +515,11 @@ input[type="checkbox"]:checked+.txtcolapsable {
   transition: opacity 0.3s ease;
 }
 
-.nota3:hover ~ .nota3Texto {
+.nota3:hover~.nota3Texto {
   opacity: 1;
 }
 
-.nota3:active ~ .nota3Texto {
+.nota3:active~.nota3Texto {
   font-size: 13px;
 }
 
@@ -491,12 +534,12 @@ input[type="checkbox"]:checked+.txtcolapsable {
 /****************************************************************************************/
 
 /*Breadcrumbs*/
-.breadcrumb{
+.breadcrumb {
   float: right;
 }
 
 .breadcrumbContainer {
-  float: right ;
+  float: right;
   margin-top: 15px;
 }
 
@@ -529,21 +572,21 @@ input[type="checkbox"]:checked+.txtcolapsable {
 /****************************************************************************************/
 
 /*Traducción español-ingles con boton*/
-.ing{
+.ing {
   display: none;
 }
 
-#botonTraduccion:checked ~ .esp,
-#botonTraduccion:checked ~ div .esp {
+#botonTraduccion:checked~.esp,
+#botonTraduccion:checked~div .esp {
   display: none;
 }
 
-#botonTraduccion:checked ~ .ing,
-#botonTraduccion:checked ~ div .ing {
+#botonTraduccion:checked~.ing,
+#botonTraduccion:checked~div .ing {
   display: block;
 }
 
-#botonTraduccion{
+#botonTraduccion {
   display: none;
 }
 
@@ -553,7 +596,7 @@ label.bandera {
   background-image: url('../img/españa.png');
 }
 
-#botonTraduccion:checked + .bandera {
+#botonTraduccion:checked+.bandera {
   background-image: url('../img/inglaterra.png');
   width: 50px;
   background-image: url('../img/inglaterra.png');
@@ -573,8 +616,13 @@ label.bandera {
 }
 
 @keyframes imagen {
-  0% { background-position: 0px 0; }
-  100% { background-position: -1040px 0; }
+  0% {
+    background-position: 0px 0;
+  }
+
+  100% {
+    background-position: -1040px 0;
+  }
 }
 
 
@@ -588,17 +636,52 @@ label.bandera {
   }
 
   #mapaimagenhumano {
-      margin-left: 0;
-      width: auto;
-    }
+    margin-left: 0;
+    width: auto;
+  }
 
-    audio {
-      display: none;
-    }
+  audio {
+    display: none;
+  }
 
-    video {
-      width: 300px;
-    }
+  video {
+    width: 300px;
+  }
+
+  /* Menú tipo hamburguesa */
+  .navegadorCSS {
+    background-color: #34f9fc;
+    flex-direction: column;
+    margin: 0;
+    height: fit-content;
+  }
+
+  .navegadorCSS #menuNav {
+    margin-left: 0px;
+    flex-direction: column;
+    margin: 0;
+    display: none;
+  }
+
+  .prim {
+    margin-left: 50px;
+    padding: 0px;
+  }
+
+
+  .hamburguesa {
+    display: block;
+  }
+
+  .hamburguesa:active {
+    outline: 4px solid #125758;
+  }
+
+  #hamburguesa-checkbox:checked ~ ul{
+    display: block;
+  }
+
+
 
 }
 
@@ -608,7 +691,7 @@ label.bandera {
     flex-direction: column;
   }
 
-  #mapaimagenhumano label{
+  #mapaimagenhumano label {
     bottom: 0px;
   }
 
@@ -637,13 +720,12 @@ label.bandera {
     margin: auto;
   }
 
-  #mapaentrenamiento > div {
+  #mapaentrenamiento>div {
     display: flex;
   }
 
-  .asociaciones > div{
+  .asociaciones>div {
     padding: 0px 50px;
   }
 
 }
-
