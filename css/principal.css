@@ -600,6 +600,13 @@ label.bandera {
       width: 300px;
     }
 
+    .breadcrumb{
+      display: none;
+    }
+
+    .breadcrumbContainer{
+      display: none;
+    }
 }
 
 @media only screen and (min-width: 751px) and (max-width: 1300px) {
@@ -645,5 +652,9 @@ label.bandera {
     padding: 0px 50px;
   }
 
+}
+
+.fotorecorte img {
+  width: 500px;
 }
 
