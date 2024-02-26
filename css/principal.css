@@ -609,19 +609,3 @@ label.bandera {
 
 }
 
-#checkHamburguer{
-  display: none;
-}
-
-.hamburguer{
-  display: none;
-}
-
-@media only screen and (max-width: 750px) { /*MIRAR*/
-  .hamburguer{
-    display: block;
-  }
-  #menunav{
-    display: none;
-  }
-}
