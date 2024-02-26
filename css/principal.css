@@ -671,7 +671,6 @@ label.bandera {
   .prim {
     margin-left: 50px;
     padding: 10px 0px;
-    height: 20px;
   }
 
   .navegadorCSS #menuNav li.prim>a {
@@ -680,12 +679,8 @@ label.bandera {
   }
 
   .navegadorCSS li ul {
-    position: static;
-    display: block;
-
-
-
-  border: 3px solid red;
+    position: relative;
+    margin-right: 10px;
   }
 
   .hamburguesa {
