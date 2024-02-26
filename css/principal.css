@@ -663,15 +663,29 @@ label.bandera {
   .navegadorCSS #menuNav {
     margin-left: 0px;
     flex-direction: column;
-    margin: 0;
+    margin: 10px 0px;
+    margin-top: -5px;
     display: none;
   }
 
   .prim {
     margin-left: 50px;
-    padding: 0px;
+    padding: 10px 0px;
+    height: 20px;
   }
 
+  .navegadorCSS #menuNav li.prim>a {
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .navegadorCSS li ul {
+    display: none;
+    position: block;
+
+
+  border: 3px solid red;
+  }
 
   .hamburguesa {
     display: block;
