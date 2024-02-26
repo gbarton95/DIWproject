@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 55px;
   margin: 0px 3px 0px 3px;
   padding: 0;
+  z-index: 2;
 }
 
 .navegadorCSS #menuNav {
@@ -156,6 +157,24 @@ span.arrowDown {
   font-size: 24px;
   height: 15px;
   margin-top: 2px;
+}
+
+#hamburguesa-checkbox {
+  display: none;
+}
+
+.hamburguesa {
+  font-size: 25px;
+  cursor: pointer;
+  border: 1px solid rgb(154, 174, 182);
+  border-radius: 5px;
+  height: fit-content;
+  padding: 0px 15px;
+  opacity: 0.8;
+}
+
+.hamburguesa:active {
+  outline: 4px solid #125758;
 }
 
 
@@ -469,7 +488,6 @@ input[type="checkbox"]:checked+.txtcolapsable {
   color: black;
 }
 
-
 /****************************************************************************************/
 
 /*Breadcrumbs*/
@@ -479,18 +497,18 @@ input[type="checkbox"]:checked+.txtcolapsable {
 
 .breadcrumbContainer {
   float: right ;
-  margin-top: 15px; /* Ajusta el margen superior según sea necesario */
+  margin-top: 15px;
 }
 
 .breadcrumb {
-  margin: 0; 
-  padding: 0; 
-  font-size: 14px; 
-  color: #333; 
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
 }
 
 .breadcrumb a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #333;
 }
 
@@ -531,8 +549,8 @@ label.bandera {
 }
 
 #botonTraduccion:checked + .bandera {
-  background-image: url('../img/inglaterra.png'); 
-  width: 50px; 
+  background-image: url('../img/inglaterra.png');
+  width: 50px;
   height: 30px;
 }
 
@@ -567,6 +585,14 @@ label.bandera {
       width: auto;
     }
 
+    audio {
+      display: none;
+    }
+
+    video {
+      width: 300px;
+    }
+
 }
 
 @media only screen and (min-width: 751px) and (max-width: 1300px) {
@@ -575,13 +601,18 @@ label.bandera {
     flex-direction: column;
   }
 
-  .derecha {
-    text-align: center;
-  }
-
   #mapaimagenhumano label{
     bottom: 0px;
   }
+
+  .asociaciones {
+    text-align: center;
+  }
+
+  .asociaciones div {
+    margin: auto;
+  }
+
 }
 
 @media only screen and (min-width: 1301px) {
@@ -601,6 +632,10 @@ label.bandera {
 
   #mapaentrenamiento > div {
     display: flex;
+  }
+
+  .asociaciones > div{
+    padding: 0px 50px;
   }
 
 }
